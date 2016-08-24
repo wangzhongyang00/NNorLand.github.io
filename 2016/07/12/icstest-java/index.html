@@ -1,0 +1,696 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Java," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="NNorLand" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="引言Java问题记录前端开发怎么能不懂点后台知识？说好的前(全)端(栈)工程师呢？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java问题记录">
+<meta property="og:url" content="http://yoursite.com/2016/07/12/icstest-java/index.html">
+<meta property="og:site_name" content="NNorLand">
+<meta property="og:description" content="引言Java问题记录前端开发怎么能不懂点后台知识？说好的前(全)端(栈)工程师呢？">
+<meta property="og:updated_time" content="2016-08-23T03:27:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java问题记录">
+<meta name="twitter:description" content="引言Java问题记录前端开发怎么能不懂点后台知识？说好的前(全)端(栈)工程师呢？">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Java问题记录 | NNorLand </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">NNorLand</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">mixed motes</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Java问题记录
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-12T20:33:05+08:00" content="2016-07-12">
+              2016-07-12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/12/icstest-java/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/12/icstest-java/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>Java问题记录<br>前端开发怎么能不懂点后台知识？说好的前(全)端(栈)工程师呢？<br><a id="more"></a></p>
+<hr>
+<h3 id="string-stringbuffer与stringbuilder的区别"><a href="#string-stringbuffer与stringbuilder的区别" class="headerlink" title="string,stringbuffer与stringbuilder的区别?"></a>string,stringbuffer与stringbuilder的区别?</h3><p>1.在执行速度方面的比较：StringBuilder &gt;  StringBuffer<br>2.StringBuffer与StringBuilder，他们是字符串变量，是可改变的对象，每当我们用它们对字符串做操作时，实际上是在一个对象上操作的，不像String一样创建一些对象进行操作，所以速度就快了。<br>3.StringBuilder：线程非安全的<br>　StringBuffer：线程安全的<br>我们在字符串缓冲去被多个线程使用是，JVM不能保证StringBuilder的操作是安全的，虽然他的速度最快，但是可以保证StringBuffer是可以正确操作的。当然大多数情况下就是我们是在单线程下进行的操作，所以大多数情况下是建议用StringBuilder而不用StringBuffer的，就是速度的原因。</p>
+<p>对于三者使用的总结：</p>
+<ol>
+<li>如果要操作少量的数据用 = String</li>
+<li>单线程操作字符串缓冲区 下操作大量数据 = StringBuilder</li>
+<li>多线程操作字符串缓冲区 下操作大量数据 = StringBuffer</li>
+</ol>
+<hr>
+<h3 id="Java防止非法和重复表单提交的方法"><a href="#Java防止非法和重复表单提交的方法" class="headerlink" title="Java防止非法和重复表单提交的方法"></a>Java防止非法和重复表单提交的方法</h3><p>答: 使用Session技术:</p>
+<ol>
+<li>在regist.jsp页面中生成一个唯一随机值, 将其保存到Session中, 同时将其保存为表单的隐藏域的值</li>
+<li>在处理注册的请求时,获取Session中值,获取请求参数的值,比较两者是否相同, 如果相同说明不是重复提交,请求通过同时删除session中保存的值, 如果不相同则是重复提交, 不能通过.</li>
+</ol>
+<p>经典现实案例:</p>
+<blockquote>
+<p>一位乘客在北京火车站买了一张去天津的火车票(直接刷的那种),他刷票进站坐火车去了天津, 回来后过了几天, 他又需要去天津这次他不想再买票, 直接拿上次的票去进站口刷, 检票机提示“此火车票已使用过了”, 不能进站.</p>
+</blockquote>
+<p>博客园详细文章解答:<br><a href="http://www.cnblogs.com/xdp-gacl/p/3859416.html" target="_blank" rel="external">JavaWeb学习总结(十三)——使用Session防止表单重复提交</a></p>
+<hr>
+<h3 id="静态include与动态include的区别分析："><a href="#静态include与动态include的区别分析：" class="headerlink" title="静态include与动态include的区别分析："></a>静态include与动态include的区别分析：</h3><p>为了更深刻的了解这两者的区别，专门搜索了类似的资料，写出来供大家分享：</p>
+<ol>
+<li><p>静态include的结果是把其他jsp引入当前jsp,两者合为一体，用include指令, 包含的动作是在jsp被编译成java文件时执行的, 只有第一次请求时执行. <br><br>动态include的结构是两者独立,直到输出时才合并，用<code>&lt;jsp:include&gt;</code>, 包含的动作是在jsp对应的Serlet处理请求时去执行的,每次请求都会执行.</p>
+</li>
+<li><p>动态include的jsp文件独立性很强,是一个单独的jsp文件,需要使用的对象,页面设置,都必须由自己创建,当然,还好它和include它的页面的request范围是一致的. <br><br>而静态include纯粹是把代码写在外面的一种共享方法,所有的变量都是可以和include它的主文件共享,两者高度紧密结合,不能有变量同名的冲突.而页面设置也可以借用主文件的.</p>
+</li>
+</ol>
+<p>静态include主要是对静态页面的引入，不会检查所包含文件的变化<br><code>&lt;% @ include file=&quot;include.html&quot; %&gt;</code><br>动态include主要是对动态页面的引入，它总是会检查所引入的页面的变化，如果所包含的资源在请求间发生变化<br>，则下一次请求包含<code>&lt;jsp:include&gt;</code>动作的jsp时，将包含资源的新内容。<br>另一方面，include指令在转换时一次性地将内容复制到jsp中，如果所包含的资源发生变化，则使用include指令的jsp将不能反应出新的内容，除非重新编译该jsp。</p>
+<p><code>&lt;jsp：include&gt;</code>动作包含的属性：<br>page：指定所包含资源的相对url路径，该资源必须时同一web应用程序的组成部分。<br>flush：指定在执行include动作后是否应刷新缓冲区，在jsp1.1中，该属性必须设置为真。<br>使用动态include动作时，根据jsp1.1规范，jsp容器允许判断通过include指令包含的资源是否发生变化。如果发生变化。则容器可以重新编译包含该资源的jsp，然而，该规范并没有提供向容器表明某个包含的资源发生变化的机制。</p>
+<p>动态include的优点和不足：</p>
+<p><strong>优点</strong>：</p>
+<ol>
+<li>引入和同步一个动态的页面，使jsp页面更具灵活性</li>
+<li>能和不同页面之间进行信息的交互和快捷的实现方式。</li>
+<li>改变了原始的所有页面编码都放在一个jsp上，使不同的功能分别写在不同页里，通过动态include方式引用到页面，更易于编码，更易于管理。</li>
+</ol>
+<p><strong>不足</strong>：</p>
+<p>动态的引入时需要频繁的变化和页面信息的更新和交互，要占用大量的资源开销。降低页面的访问速度。如果在没必要动态引入的情况下，不要使用动态include<br>应该注意事项：</p>
+<ol>
+<li><jsp:include>动作的flush属性必须要定义，不定义会出现转换错误。而且设置的flush必须要为true</jsp:include></li>
+<li>在<jsp:include>动作中指定的页面必须是同一web应用程序的一部分。如果引入的是非同一web应用的页面将导致请求时错误。</jsp:include></li>
+</ol>
+<hr>
+<h3 id="List-Set-Map是否继承自Collection接口？"><a href="#List-Set-Map是否继承自Collection接口？" class="headerlink" title="List,Set,Map是否继承自Collection接口？"></a>List,Set,Map是否继承自Collection接口？</h3><p>答：List，Set是，Map不是。如图<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Collection</div><div class="line">├List //有序</div><div class="line">│ ├LinkedList</div><div class="line">│ ├ArrayList</div><div class="line">│ └Vector</div><div class="line">│   └Stack</div><div class="line">└Set //无序不重复</div><div class="line">Map //键值对</div><div class="line">├Hashtable</div><div class="line">├HashMap</div><div class="line">└WeakHashMap</div></pre></td></tr></table></figure></p>
+<p>Collection是最基本的集合接口，一个Collection代表一组Object，即Collection的元素。一些Collection允许相同的元素而另一些不行。一些能排序而另一些不行。Java JDK不能提供直接继承自Collection的类，Java JDK提供的类都是继承自Collection的”子接口”，如:List和Set。</p>
+<p>注意：Map没有继承Collection接口，Map提供key到value的映射。一个Map中不能包含相同key，每个key只能映射一个value。Map接口提供3种集合的视图，Map的内容可以被当做一组key集合，一组value集合，或者一组key-value映射。</p>
+<p>详细介绍：</p>
+<ul>
+<li>List特点：元素有放入顺序，元素可重复</li>
+<li>Map特点：元素按键值对存储，无放入顺序</li>
+<li>Set特点：元素无放入顺序，元素不可重复（注意：元素虽然无放入顺序，但是元素在set中的位置是有该元素的HashCode决定的，其位置其实是固定的）</li>
+<li>List接口有三个实现类：LinkedList，ArrayList，Vector</li>
+<li>LinkedList：底层基于链表实现，链表内存是散乱的，每一个元素存储本身内存地址的同时还存储下一个元素的地址。链表增删快，查找慢</li>
+<li>ArrayList和Vector的区别：<blockquote>
+<ul>
+<li>ArrayList是非线程安全的，效率高；</li>
+<li>Vector是基于线程安全的，效率低</li>
+</ul>
+</blockquote>
+</li>
+<li>Set接口有两个实现类：HashSet(底层由HashMap实现)，LinkedHashSet</li>
+<li>SortedSet接口有一个实现类：TreeSet（底层由平衡二叉树实现）</li>
+<li>Query接口有一个实现类：LinkList</li>
+<li>Map接口有三个实现类：HashMap，HashTable，LinkeHashMap</li>
+<li>HashMap非线程安全，高效，支持null；HashTable线程安全，低效，不支持null</li>
+<li>SortedMap有一个实现类：TreeMap</li>
+</ul>
+<p>其实最主要的是，list是用来处理序列的，而set是用来处理集的。Map是知道的，存储的是键值对 <br><br><strong>set一般无序不重复.map kv 结构 ,list 有序</strong></p>
+<hr>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag">#Java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/10/7niu/" rel="next" title="7niu">
+                <i class="fa fa-chevron-left"></i> 7niu
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/26/git-commit-message-change-log/" rel="prev" title="git commit message和change log编写指南">
+                git commit message和change log编写指南 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/12/icstest-java/"
+           data-title="Java问题记录" data-url="http://yoursite.com/2016/07/12/icstest-java/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="刘家安" />
+          <p class="site-author-name" itemprop="name">刘家安</p>
+          <p class="site-description motion-element" itemprop="description">瞎写</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/liujiaan07" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/vergilhk" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#string-stringbuffer与stringbuilder的区别"><span class="nav-number">2.</span> <span class="nav-text">string,stringbuffer与stringbuilder的区别?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java防止非法和重复表单提交的方法"><span class="nav-number">3.</span> <span class="nav-text">Java防止非法和重复表单提交的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#静态include与动态include的区别分析："><span class="nav-number">4.</span> <span class="nav-text">静态include与动态include的区别分析：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#List-Set-Map是否继承自Collection接口？"><span class="nav-number">5.</span> <span class="nav-text">List,Set,Map是否继承自Collection接口？</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">刘家安</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"NNorLand"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
