@@ -74,6 +74,10 @@ feed:
 duoshuo_shortname: NNorLand
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+search:
+  path: search.xml
+  field: post
+
 deploy:
   type: git
   repo: git@github.com:NNorLand/NNorLand.github.io.git
