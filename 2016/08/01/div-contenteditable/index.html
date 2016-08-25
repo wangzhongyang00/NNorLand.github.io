@@ -86,16 +86,22 @@
 
 
 
-<meta name="description" content="使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有placeholder属性,通过css样式:empty:before,增加content解决.">
+<meta name="description" content="转载来自张鑫旭-鑫空间-鑫生活原文地址： http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/
+
+contenteditable使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有plac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="div实现高度撑开的输入框">
 <meta property="og:url" content="http://yoursite.com/2016/08/01/div-contenteditable/index.html">
 <meta property="og:site_name" content="NNorLand">
-<meta property="og:description" content="使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有placeholder属性,通过css样式:empty:before,增加content解决.">
-<meta property="og:updated_time" content="2016-08-23T03:22:29.000Z">
+<meta property="og:description" content="转载来自张鑫旭-鑫空间-鑫生活原文地址： http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/
+
+contenteditable使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有plac">
+<meta property="og:updated_time" content="2016-08-25T05:04:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="div实现高度撑开的输入框">
-<meta name="twitter:description" content="使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有placeholder属性,通过css样式:empty:before,增加content解决.">
+<meta name="twitter:description" content="转载来自张鑫旭-鑫空间-鑫生活原文地址： http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/
+
+contenteditable使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有plac">
 
 
 
@@ -207,9 +213,32 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
   
 </nav>
 
@@ -290,14 +319,38 @@
       
 
       
-        <p>使用input或textare时,输入框大小固定,因此采用div,在div上增加<code>contenteditable=&quot;true&quot;</code>属性.这样的话,没有placeholder属性,通过css样式<code>:empty:before</code>,增加content解决.</p>
+        <blockquote>
+<p>转载<br>来自<a href="http://www.zhangxinxu.com" target="_blank" rel="external">张鑫旭-鑫空间-鑫生活</a><br>原文地址： <a href="http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/</a></p>
+</blockquote>
+<h1 id="contenteditable"><a href="#contenteditable" class="headerlink" title="contenteditable"></a>contenteditable</h1><p>使用input或textare时,输入框大小固定,因此采用div,在div上增加<code>contenteditable=&quot;true&quot;</code>属性.这样的话,没有placeholder属性,通过css样式<code>:empty:before</code>,增加content解决.</p>
 <a id="more"></a>
 <p>下面是一个示例<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test_box"</span> <span class="attr">contenteditable</span>=<span class="string">"true"</span> <span class="attr">onpaste</span>=<span class="string">"return false"</span> <span class="attr">data-placeholder</span>=<span class="string">"聊聊这组照片"</span> <span class="attr">id</span>=<span class="string">"test_box"</span> <span class="attr">onKeyUp</span>=<span class="string">"showLen(this);"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align: right;padding-right: 0.8em"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"str_length"</span> <span class="attr">class</span>=<span class="string">"str_length"</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>/200<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.test_box</span> &#123;</div><div class="line">    <span class="attribute">min-height</span>: <span class="number">100px</span>;</div><div class="line">    <span class="attribute">max-height</span>: <span class="number">300px</span>;</div><div class="line">    <span class="attribute">margin-left</span>: auto;</div><div class="line">    <span class="attribute">margin-right</span>: auto;</div><div class="line">    <span class="attribute">padding</span>: <span class="number">0.8em</span>;</div><div class="line">    <span class="attribute">padding-bottom</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">outline</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">word-wrap</span>: break-word;</div><div class="line">    <span class="attribute">overflow-x</span>: hidden;</div><div class="line">    <span class="attribute">overflow-y</span>: auto;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.test_box</span>:empty:before &#123;</div><div class="line">    <span class="attribute">content</span>: attr(data-placeholder);</div><div class="line">    <span class="attribute">color</span>:<span class="number">#d3d3d3</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.test_box</span>:focus:before&#123;</div><div class="line">    <span class="attribute">content</span>:none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    showLen(<span class="built_in">document</span>.getElementById(<span class="string">"test_box"</span>));</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">showLen</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> t = <span class="built_in">document</span>.getElementById(<span class="string">"test_box"</span>).innerText;</div><div class="line">        <span class="keyword">var</span> num = <span class="built_in">document</span>.getElementById(<span class="string">'str_length'</span>)</div><div class="line">        <span class="keyword">if</span> (t.length &gt; <span class="number">200</span>) &#123;</div><div class="line">            num.innerHTML = obj.innerText.length;</div><div class="line">            num.style.color= <span class="string">"red"</span>;</div><div class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">else</span> &#123;</div><div class="line">            num.innerHTML = obj.innerText.length;</div><div class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
 <blockquote>
-<p>*注意,在获取div的内容时,不能用value,用innerText</p>
+<ul>
+<li>注意,在获取div的内容时,不能用value,用innerText  </li>
+</ul>
 </blockquote>
+<hr>
+<h1 id="温故知新"><a href="#温故知新" class="headerlink" title="温故知新"></a>温故知新</h1><ul>
+<li>2016-08-25补充  </li>
+</ul>
+<p>利用全浏览器都支持的contenteditable模拟文本域可以实现体验相当不错的高度跟随内容自动撑开的效果，但是呢，有个很大的问题就是HTML内容可以直接被粘贴进去.</p>
+<h1 id="提问：在HTML中，contenteditable支持的属性值是？"><a href="#提问：在HTML中，contenteditable支持的属性值是？" class="headerlink" title="提问：在HTML中，contenteditable支持的属性值是？"></a>提问：在HTML中，contenteditable支持的属性值是？</h1><p>图样图森破时候的我，脑中就只有contenteditable=”true”和contenteditable=”false”，咳咳，后来我发现自己太天真了，新的草案中明确表示还有多个其他属性值：</p>
+<blockquote>
+<p>The contenteditable attribute is an enumerated attribute whose keywords are the empty string (“”), “events”, “caret”, “typing”, “plaintext-only”, “true”, and “false”. There is one additional state, the inherit state, which is the missing value default (and the invalid value default).</p>
+</blockquote>
+<p>垂直展示下就是（不包括默认的inherit继承）：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">contenteditable=""</div><div class="line">contenteditable="events"</div><div class="line">contenteditable="caret"</div><div class="line">contenteditable="plaintext-only"</div><div class="line">contenteditable="true"</div><div class="line">contenteditable="false"</div></pre></td></tr></table></figure></p>
+<p>别问我，我也不知道”events”和”caret”是干什么用的，嘿，但是”plaintext-only”我是知道的，可以让编辑区域只能键入纯文本。这里就不需要demo了，直接下面的框框，大家可以试试，看看能不能搞富文本。  </p>
+<p><code>&lt;div contenteditable=&quot;plaintext-only&quot;&gt;&lt;/div&gt;</code></p>
+<div style="min-height:80px;border:1px solid grey" contenteditable="plaintext-only"></div>
+
+<h1 id="与contenteditable属性无关的CSS控制法"><a href="#与contenteditable属性无关的CSS控制法" class="headerlink" title="与contenteditable属性无关的CSS控制法"></a>与contenteditable属性无关的CSS控制法</h1><p>一个div元素，要让其可编辑，也就是可读写，contenteditable属性是最常用方法，做前端的基本上都知道。但是，知道CSS中有属性可以让普通元素可读写的的同学怕是就少多了。</p>
+<p>主角亮相：user-modify.</p>
+<p>支持属性值如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">user-modify: read-only;</div><div class="line">user-modify: read-write;</div><div class="line">user-modify: write-only;</div><div class="line">user-modify: read-write-plaintext-only;</div></pre></td></tr></table></figure></p>
+<p>其中，write-only不用在意，当下这个年代，基本上没有浏览器支持，以后估计也不会有。read-only表示只读，就是普通元素的默认状态啦。然后，read-write和read-write-plaintext-only会让元素表现得像个文本域一样，可以focus以及输入内容。<br>会发现，设置了read-write和read-write-plaintext-only值的两个</p><p>标签元素是可以被focus的.<br>而这两者的区别就在于，一个可以输入富文本，而下面一个只能输入纯文本.<br>然而，抱歉地跟大家讲下，目前只有webkit内核浏览器才支持<code>read-write-plaintext-only</code>这个值，因此，我们的使用其实是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-user-modify: read-write-plaintext-only</div></pre></td></tr></table></figure></p>
+<p>我们可以在移动端使用，以及，只需要兼顾webkit内容的桌面网页项目。</p>
 
       
     </div>
@@ -478,7 +531,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#contenteditable"><span class="nav-number">1.</span> <span class="nav-text">contenteditable</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#温故知新"><span class="nav-number">2.</span> <span class="nav-text">温故知新</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#提问：在HTML中，contenteditable支持的属性值是？"><span class="nav-number">3.</span> <span class="nav-text">提问：在HTML中，contenteditable支持的属性值是？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#与contenteditable属性无关的CSS控制法"><span class="nav-number">4.</span> <span class="nav-text">与contenteditable属性无关的CSS控制法</span></a></li></ol></div>
             
           </div>
         </section>
@@ -626,6 +679,135 @@
 
   
   
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
   
 
   

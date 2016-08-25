@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>NNorLand</title>
-  <subtitle>mixed motes</subtitle>
-  <link href="/atom.xml" rel="self"/>
+<search>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2016-08-24T14:23:18.000Z</updated>
-  <id>http://yoursite.com/</id>
   
-  <author>
-    <name>刘家安</name>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>财务自由</title>
-    <link href="http://yoursite.com/2016/08/24/Financial-independence/"/>
-    <id>http://yoursite.com/2016/08/24/Financial-independence/</id>
-    <published>2016-08-24T14:08:33.000Z</published>
-    <updated>2016-08-24T14:23:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
+    <entry>
+      <title><![CDATA[财务自由]]></title>
+      <url>http://yoursite.com/2016/08/24/Financial-independence/</url>
+      <content type="html"><![CDATA[<blockquote>
 <p>财务自由，就是当你不工作的时候，也不必为金钱发愁，因为你有其他投资。当工作不是你养家糊口的惟一手段时，你便自由了，因而你也获得了快乐的基础，也达到了财务自由.—摘自<a href="http://baike.baidu.com/view/1722687.htm" target="_blank" rel="external">百度百科</a></p>
 </blockquote>
 <a id="more"></a>
@@ -43,28 +27,12 @@
 </table>
 <p>35岁能财务自由吗 ? 不可能 ? 没出息.</p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;财务自由，就是当你不工作的时候，也不必为金钱发愁，因为你有其他投资。当工作不是你养家糊口的惟一手段时，你便自由了，因而你也获得了快乐的基础，也达到了财务自由.—摘自&lt;a href=&quot;http://baike.baidu.com/view/1722687.htm&quot;&gt;百度百科&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="杂记" scheme="http://yoursite.com/tags/%E6%9D%82%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>陆龟常见病的小窍门还有常识</title>
-    <link href="http://yoursite.com/2016/08/23/tortoise-treat-the-disease/"/>
-    <id>http://yoursite.com/2016/08/23/tortoise-treat-the-disease/</id>
-    <published>2016-08-23T02:56:03.000Z</published>
-    <updated>2016-08-23T03:21:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>转载自<a href="http://bbs.pxtx.com/" target="_blank" rel="external">爬行天下</a>的一位养龟近十年的龟友<a href="http://bbs.pxtx.com/space-uid-261910.do" target="_blank" rel="external">五块钱</a>的帖子.<br>附上原帖地址:</p>
+    <entry>
+      <title><![CDATA[陆龟常见病的小窍门还有常识]]></title>
+      <url>http://yoursite.com/2016/08/23/tortoise-treat-the-disease/</url>
+      <content type="html"><![CDATA[<p>转载自<a href="http://bbs.pxtx.com/" target="_blank" rel="external">爬行天下</a>的一位养龟近十年的龟友<a href="http://bbs.pxtx.com/space-uid-261910.do" target="_blank" rel="external">五块钱</a>的帖子.<br>附上原帖地址:</p>
 <blockquote>
 <ol>
 <li><a href="http://bbs.pxtx.com/thread-665323-1-1.do" target="_blank" rel="external">养龟近十年，我碰到一些陆龟常见病的小窍门还有常识，希望对新手有帮助。</a>  </li>
@@ -102,34 +70,12 @@
 <h3 id="生长纹"><a href="#生长纹" class="headerlink" title="生长纹"></a>生长纹</h3><p>要长个一定得爆生长纹，但是爆了生长纹却不一定会长个。</p>
 <h3 id="关于训练龟龟的问题"><a href="#关于训练龟龟的问题" class="headerlink" title="关于训练龟龟的问题"></a>关于训练龟龟的问题</h3><p>如果经常散养，训练龟龟定点BB是完全可行的，我有成功案例，先让它习惯在有水潮湿的地方BB，然后慢慢让其BB时熟悉厕所环境，久而久之一定行。</p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;转载自&lt;a href=&quot;http://bbs.pxtx.com/&quot;&gt;爬行天下&lt;/a&gt;的一位养龟近十年的龟友&lt;a href=&quot;http://bbs.pxtx.com/space-uid-261910.do&quot;&gt;五块钱&lt;/a&gt;的帖子.&lt;br&gt;附上原帖地址:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://bbs.pxtx.com/thread-665323-1-1.do&quot;&gt;养龟近十年，我碰到一些陆龟常见病的小窍门还有常识，希望对新手有帮助。&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://bbs.pxtx.com/thread-668212-1-1.do&quot;&gt; 养龟近十年，陆龟常见病的小窍门还有常识，希望对新手有帮助[第二季]&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="花鸟虫鱼" scheme="http://yoursite.com/tags/%E8%8A%B1%E9%B8%9F%E8%99%AB%E9%B1%BC/"/>
-    
-      <category term="陆龟" scheme="http://yoursite.com/tags/%E9%99%86%E9%BE%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Web移动端Fixed布局的解决方案</title>
-    <link href="http://yoursite.com/2016/08/22/ios-web-fixed-input-bug/"/>
-    <id>http://yoursite.com/2016/08/22/ios-web-fixed-input-bug/</id>
-    <published>2016-08-22T06:32:57.000Z</published>
-    <updated>2016-08-23T03:22:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><em>转载自:<a href="http://efe.baidu.com/blog/mobile-fixed-layout/" target="_blank" rel="external">http://efe.baidu.com/blog/mobile-fixed-layout/</a></em></p>
+    <entry>
+      <title><![CDATA[Web移动端Fixed布局的解决方案]]></title>
+      <url>http://yoursite.com/2016/08/22/ios-web-fixed-input-bug/</url>
+      <content type="html"><![CDATA[<p><em>转载自:<a href="http://efe.baidu.com/blog/mobile-fixed-layout/" target="_blank" rel="external">http://efe.baidu.com/blog/mobile-fixed-layout/</a></em></p>
 <blockquote>
 <p>移动端业务开发，iOS 下经常会有 fixed 元素和输入框(input 元素)同时存在的情况。 但是 fixed 元素在有软键盘唤起的情况下，会出现许多莫名其妙的问题。 这篇文章里就提供一个简单的有输入框情况下的 fixed 布局方案。  </p>
 </blockquote>
@@ -158,33 +104,12 @@
 </ol>
 <p>以上面内滚动 layout-scroll-fixed 布局为例，给出一段代码作为参考：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 防止内容区域滚到底后引起页面整体的滚动</span></div><div class="line"><span class="keyword">var</span> content = <span class="built_in">document</span>.querySelector(<span class="string">'main'</span>);</div><div class="line"><span class="keyword">var</span> startY;</div><div class="line"></div><div class="line">content.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">    startY = e.touches[<span class="number">0</span>].clientY;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">content.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="comment">// 高位表示向上滚动</span></div><div class="line">    <span class="comment">// 底位表示向下滚动</span></div><div class="line">    <span class="comment">// 1容许 0禁止</span></div><div class="line">    <span class="keyword">var</span> status = <span class="string">'11'</span>;</div><div class="line">    <span class="keyword">var</span> ele = <span class="keyword">this</span>;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> currentY = e.touches[<span class="number">0</span>].clientY;</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (ele.scrollTop === <span class="number">0</span>) &#123;</div><div class="line">        <span class="comment">// 如果内容小于容器则同时禁止上下滚动</span></div><div class="line">        status = ele.offsetHeight &gt;= ele.scrollHeight ? <span class="string">'00'</span> : <span class="string">'01'</span>;</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ele.scrollTop + ele.offsetHeight &gt;= ele.scrollHeight) &#123;</div><div class="line">        <span class="comment">// 已经滚到底部了只能向上滚动</span></div><div class="line">        status = <span class="string">'10'</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (status != <span class="string">'11'</span>) &#123;</div><div class="line">        <span class="comment">// 判断当前的滚动方向</span></div><div class="line">        <span class="keyword">var</span> direction = currentY - startY &gt; <span class="number">0</span> ? <span class="string">'10'</span> : <span class="string">'01'</span>;</div><div class="line">        <span class="comment">// 操作方向和当前允许状态求与运算，运算结果为0，就说明不允许该方向滚动，则禁止默认事件，阻止滚动</span></div><div class="line">        <span class="keyword">if</span> (!(<span class="built_in">parseInt</span>(status, <span class="number">2</span>) &amp; <span class="built_in">parseInt</span>(direction, <span class="number">2</span>))) &#123;</div><div class="line">            stopEvent(e);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;转载自:&lt;a href=&quot;http://efe.baidu.com/blog/mobile-fixed-layout/&quot;&gt;http://efe.baidu.com/blog/mobile-fixed-layout/&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;移动端业务开发，iOS 下经常会有 fixed 元素和输入框(input 元素)同时存在的情况。 但是 fixed 元素在有软键盘唤起的情况下，会出现许多莫名其妙的问题。 这篇文章里就提供一个简单的有输入框情况下的 fixed 布局方案。  &lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
-    
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
-    
-      <category term="移动开发" scheme="http://yoursite.com/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>碗莲种植经验</title>
-    <link href="http://yoursite.com/2016/08/19/nelumbo-nucifera-plated/"/>
-    <id>http://yoursite.com/2016/08/19/nelumbo-nucifera-plated/</id>
-    <published>2016-08-19T14:01:36.000Z</published>
-    <updated>2016-08-23T03:21:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
+    <entry>
+      <title><![CDATA[碗莲种植经验]]></title>
+      <url>http://yoursite.com/2016/08/19/nelumbo-nucifera-plated/</url>
+      <content type="html"><![CDATA[<blockquote>
 <ul>
 <li>碗莲也称为钵莲、盆莲，就是种在碗内的莲花，专供陈于室内几桌之上，以美化居住环境。(其实就是莲花，也叫芙蓉，白莲，<code>→_→</code>)  </li>
 <li>碗莲四季皆可播种，只要水温保存在16°C就可以了。    </li>
@@ -208,32 +133,12 @@
 </blockquote>
 <h2 id="种植过程记录"><a href="#种植过程记录" class="headerlink" title="种植过程记录"></a>种植过程记录</h2><h3 id="哈哈，发芽了"><a href="#哈哈，发芽了" class="headerlink" title="哈哈，发芽了"></a>哈哈，发芽了</h3><p> <img src="http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/08/147161812400.jpg" alt=""></p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;碗莲也称为钵莲、盆莲，就是种在碗内的莲花，专供陈于室内几桌之上，以美化居住环境。(其实就是莲花，也叫芙蓉，白莲，&lt;code&gt;→_→&lt;/code&gt;)  &lt;/li&gt;
-&lt;li&gt;碗莲四季皆可播种，只要水温保存在16°C就可以了。    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/08/wanlian%20%283%29.png&quot; alt=&quot;碗莲&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="花鸟虫鱼" scheme="http://yoursite.com/tags/%E8%8A%B1%E9%B8%9F%E8%99%AB%E9%B1%BC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>swig模板引擎</title>
-    <link href="http://yoursite.com/2016/08/19/node-js-swig-engine/"/>
-    <id>http://yoursite.com/2016/08/19/node-js-swig-engine/</id>
-    <published>2016-08-19T09:30:53.000Z</published>
-    <updated>2016-08-23T03:26:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>现在有很多视图引擎,jade,swig等.用过jade,感觉不是很喜欢.还是<code>.html</code>看起来舒服一点.<br>swig能很好的解决这一点,swig默认以<code>.ejs</code>文件结尾,但是能通过一些设置,让它更加友好.<br>首先附上github地址:<a href="https://github.com/paularmstrong/swig" target="_blank" rel="external">swig.js</a><br><a id="more"></a><br>目前没有发现swig的文档,<a href="http://paularmstrong.github.io/swig/" target="_blank" rel="external">github.io</a>貌似挂了.可以将项目clone下来,执行<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install swig</div><div class="line">$ make docs</div></pre></td></tr></table></figure></p>
+    <entry>
+      <title><![CDATA[swig模板引擎]]></title>
+      <url>http://yoursite.com/2016/08/19/node-js-swig-engine/</url>
+      <content type="html"><![CDATA[<p>现在有很多视图引擎,jade,swig等.用过jade,感觉不是很喜欢.还是<code>.html</code>看起来舒服一点.<br>swig能很好的解决这一点,swig默认以<code>.ejs</code>文件结尾,但是能通过一些设置,让它更加友好.<br>首先附上github地址:<a href="https://github.com/paularmstrong/swig" target="_blank" rel="external">swig.js</a><br><a id="more"></a><br>目前没有发现swig的文档,<a href="http://paularmstrong.github.io/swig/" target="_blank" rel="external">github.io</a>貌似挂了.可以将项目clone下来,执行<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install swig</div><div class="line">$ make docs</div></pre></td></tr></table></figure></p>
 <p>编译完成自动打开浏览器,然后能看到documentation.<br>要在express框架中用swig需要进行一些设置.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// view engine setup</span></div><div class="line">app.engine(<span class="string">'html'</span>, swig.renderFile)</div><div class="line">app.set(<span class="string">'view cache'</span>, <span class="literal">false</span>);</div><div class="line">swig.setDefaults(&#123; cache: <span class="literal">false</span> &#125;);</div><div class="line">app.set(<span class="string">'views'</span>, path.join(__dirname, <span class="string">'views'</span>));</div><div class="line">app.set(<span class="string">'view engine'</span>, <span class="string">'html'</span>);</div><div class="line"><span class="comment">//	Open and close controls for variables. Defaults to ['&#123;&#123;', '&#125;&#125;'].</span></div><div class="line">swig.setDefaults(&#123;varControls: [<span class="string">'&lt;%='</span>, <span class="string">'%&gt;'</span>]&#125;);</div></pre></td></tr></table></figure></p>
 <ul>
 <li>补充:这里有一个模板引擎性能的测试,不知道有没有参考价值(测试模板较少,包括[artTemplate; jCT; juicer; doT; Handlebars; tmpl; easyTemplate; underscoreTemplate; baiduTemplate; Mustache; kissyTemplate;])<blockquote>
@@ -242,30 +147,12 @@
 </li>
 </ul>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;现在有很多视图引擎,jade,swig等.用过jade,感觉不是很喜欢.还是&lt;code&gt;.html&lt;/code&gt;看起来舒服一点.&lt;br&gt;swig能很好的解决这一点,swig默认以&lt;code&gt;.ejs&lt;/code&gt;文件结尾,但是能通过一些设置,让它更加友好.&lt;br&gt;首先附上github地址:&lt;a href=&quot;https://github.com/paularmstrong/swig&quot;&gt;swig.js&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
-    
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
-    
-      <category term="Nodejs" scheme="http://yoursite.com/tags/Nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS小技巧整理</title>
-    <link href="http://yoursite.com/2016/08/18/css-skill/"/>
-    <id>http://yoursite.com/2016/08/18/css-skill/</id>
-    <published>2016-08-18T07:36:09.000Z</published>
-    <updated>2016-08-23T03:22:31.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="CSS小技巧整理"><a href="#CSS小技巧整理" class="headerlink" title="CSS小技巧整理"></a>CSS小技巧整理</h1><a id="more"></a>
+    <entry>
+      <title><![CDATA[CSS小技巧整理]]></title>
+      <url>http://yoursite.com/2016/08/18/css-skill/</url>
+      <content type="html"><![CDATA[<h1 id="CSS小技巧整理"><a href="#CSS小技巧整理" class="headerlink" title="CSS小技巧整理"></a>CSS小技巧整理</h1><a id="more"></a>
 <ol>
 <li>某一元素高度等于宽度<br>示例:<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></div><div class="line">#container &#123;</div><div class="line">    width: 80%;</div><div class="line">    height: 500px;</div><div class="line">&#125;</div><div class="line">.attr &#123;</div><div class="line">    width: 50%;</div><div class="line">    height: 0;</div><div class="line">    padding-bottom: 50%;</div><div class="line">    background-color: #008b57;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'container'</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'attr'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
@@ -281,48 +168,19 @@
 <p>仅作参考,不限于bootstrap</p>
 </blockquote>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h1 id=&quot;CSS小技巧整理&quot;&gt;&lt;a href=&quot;#CSS小技巧整理&quot; class=&quot;headerlink&quot; title=&quot;CSS小技巧整理&quot;&gt;&lt;/a&gt;CSS小技巧整理&lt;/h1&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac软件</title>
-    <link href="http://yoursite.com/2016/08/17/mac-software/"/>
-    <id>http://yoursite.com/2016/08/17/mac-software/</id>
-    <published>2016-08-17T09:07:29.000Z</published>
-    <updated>2016-08-23T03:26:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="~/hexoBlog/source/_posts/mac-software.md">欧陆词典</a>  </p>
+    <entry>
+      <title><![CDATA[Mac软件]]></title>
+      <url>http://yoursite.com/2016/08/17/mac-software/</url>
+      <content type="html"><![CDATA[<p><a href="~/hexoBlog/source/_posts/mac-software.md">欧陆词典</a>  </p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;~/hexoBlog/source/_posts/mac-software.md&quot;&gt;欧陆词典&lt;/a&gt;  &lt;/p&gt;
-
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Give it five minutes</title>
-    <link href="http://yoursite.com/2016/08/17/give-it-five-minutes/"/>
-    <id>http://yoursite.com/2016/08/17/give-it-five-minutes/</id>
-    <published>2016-08-17T07:11:44.000Z</published>
-    <updated>2016-08-23T02:42:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
+    <entry>
+      <title><![CDATA[Give it five minutes]]></title>
+      <url>http://yoursite.com/2016/08/17/give-it-five-minutes/</url>
+      <content type="html"><![CDATA[<blockquote>
 <p>转载自<a href="https://signalvnoise.com/posts/3124-give-it-five-minutes" target="_blank" rel="external">https://signalvnoise.com/posts/3124-give-it-five-minutes</a></p>
 </blockquote>
 <a id="more"></a>
@@ -337,28 +195,12 @@
 <p>“正如Steve热爱想法，热爱制造东西，他对创新有着罕见和崇高地尊敬。你知道我认为他比任何人都理解想法最终是强大的，想法刚开始也许很脆弱，几乎算不上想法，所以很容易被忘掉，很容易被妥协，很容易被扯碎”<br>这段话很深刻，想法最初都是脆弱的，他们一开始并没有任何能量，他们算不上是想法，因而很容易被忽略。<br>这世界上有两种事情不需要技巧:1,花别人的钱;2,摒弃想法。</p>
 <p>摒弃想法非常容易它不需要涉及任何努力。你可以嘲笑它，可以忽略它，可以朝它喷烟圈，这都容易。难的是保护它，思考它，浸淫它，探索它，重复它，实验它。正确的想法会开启我们的生活，一如错误的想法一样。<br>所以，下一次你听到某件事情的时候，或者某个人谈论某个想法，抛出或者建议一个想法的时候，给这个想法五分钟。在反驳它之前稍微思考一下，而不是说思考很难做或者很费工夫。也许真的很难，但是也可能有另外一个事实：思考是值的。</p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;转载自&lt;a href=&quot;https://signalvnoise.com/posts/3124-give-it-five-minutes&quot;&gt;https://signalvnoise.com/posts/3124-give-it-five-minutes&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="杂记" scheme="http://yoursite.com/tags/%E6%9D%82%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>移动端高清屏图片适配</title>
-    <link href="http://yoursite.com/2016/08/04/mobile-apter/"/>
-    <id>http://yoursite.com/2016/08/04/mobile-apter/</id>
-    <published>2016-08-04T08:48:59.000Z</published>
-    <updated>2016-08-23T03:12:53.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="参考张鑫旭博客"><a href="#参考张鑫旭博客" class="headerlink" title="参考张鑫旭博客"></a>参考<a href="http://www.zhangxinxu.com/wordpress/2014/10/responsive-images-srcset-size-w-descriptor/" title="blank" target="_blank" rel="external">张鑫旭博客</a></h2><p>首先我们看下我们切图的命名方式：</p>
+    <entry>
+      <title><![CDATA[移动端高清屏图片适配]]></title>
+      <url>http://yoursite.com/2016/08/04/mobile-apter/</url>
+      <content type="html"><![CDATA[<h2 id="参考张鑫旭博客"><a href="#参考张鑫旭博客" class="headerlink" title="参考张鑫旭博客"></a>参考<a href="http://www.zhangxinxu.com/wordpress/2014/10/responsive-images-srcset-size-w-descriptor/" title="blank" target="_blank" rel="external">张鑫旭博客</a></h2><p>首先我们看下我们切图的命名方式：</p>
 <p>假设有两张图片名为：正确的命名方式应该是这样test_t@2x.png 、test_t@3x.png</p>
 <p>这是对于ios APP 切图来说的。<br>HTML并不会智能匹配,但是新标准有相应的属性能够实现.</p>
 <a id="more"></a>
@@ -382,57 +224,20 @@
 <p>注意，这里所有的值都是指宽度值，且单位任意，em, px, cm, vw, …都是可以的，甚至可以CSS3的calc计算（对应下面demo页面第2张图），例如：</p>
 <p>sizes=”(max-width: 360px) calc(100vw - 20px), 128px”<br>表示当视区宽度不大于360像素时候，图片宽度为整个视区宽度减去20像素的大小。</p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;参考张鑫旭博客&quot;&gt;&lt;a href=&quot;#参考张鑫旭博客&quot; class=&quot;headerlink&quot; title=&quot;参考张鑫旭博客&quot;&gt;&lt;/a&gt;参考&lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2014/10/responsive-images-srcset-size-w-descriptor/&quot; title=&quot;blank&quot;&gt;张鑫旭博客&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;首先我们看下我们切图的命名方式：&lt;/p&gt;
-&lt;p&gt;假设有两张图片名为：正确的命名方式应该是这样test_t@2x.png 、test_t@3x.png&lt;/p&gt;
-&lt;p&gt;这是对于ios APP 切图来说的。&lt;br&gt;HTML并不会智能匹配,但是新标准有相应的属性能够实现.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
-    
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
-    
-      <category term="移动开发" scheme="http://yoursite.com/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>yoeman-generator各种构造器,轮子</title>
-    <link href="http://yoursite.com/2016/08/01/yoeman-generator/"/>
-    <id>http://yoursite.com/2016/08/01/yoeman-generator/</id>
-    <published>2016-08-01T08:33:45.000Z</published>
-    <updated>2016-08-23T03:26:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>yeoman官网提供了很多构造器,免去了自己构建的烦恼.</p>
+    <entry>
+      <title><![CDATA[yoeman-generator各种构造器,轮子]]></title>
+      <url>http://yoursite.com/2016/08/01/yoeman-generator/</url>
+      <content type="html"><![CDATA[<p>yeoman官网提供了很多构造器,免去了自己构建的烦恼.</p>
 <p>地址:<a href="http://yeoman.io/generators/" target="_blank" rel="external">http://yeoman.io/generators/</a></p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;yeoman官网提供了很多构造器,免去了自己构建的烦恼.&lt;/p&gt;
-&lt;p&gt;地址:&lt;a href=&quot;http://yeoman.io/generators/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yeoman.io/generators/
-    
-    </summary>
-    
-    
-      <category term="Nodejs" scheme="http://yoursite.com/tags/Nodejs/"/>
-    
-      <category term="Yeoman" scheme="http://yoursite.com/tags/Yeoman/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>div实现高度撑开的输入框</title>
-    <link href="http://yoursite.com/2016/08/01/div-contenteditable/"/>
-    <id>http://yoursite.com/2016/08/01/div-contenteditable/</id>
-    <published>2016-08-01T01:23:22.000Z</published>
-    <updated>2016-08-25T05:04:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
+    <entry>
+      <title><![CDATA[div实现高度撑开的输入框]]></title>
+      <url>http://yoursite.com/2016/08/01/div-contenteditable/</url>
+      <content type="html"><![CDATA[<blockquote>
 <p>转载<br>来自<a href="http://www.zhangxinxu.com" target="_blank" rel="external">张鑫旭-鑫空间-鑫生活</a><br>原文地址： <a href="http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/</a></p>
 </blockquote>
 <h1 id="contenteditable"><a href="#contenteditable" class="headerlink" title="contenteditable"></a>contenteditable</h1><p>使用input或textare时,输入框大小固定,因此采用div,在div上增加<code>contenteditable=&quot;true&quot;</code>属性.这样的话,没有placeholder属性,通过css样式<code>:empty:before</code>,增加content解决.</p>
@@ -465,31 +270,12 @@
 <p>其中，write-only不用在意，当下这个年代，基本上没有浏览器支持，以后估计也不会有。read-only表示只读，就是普通元素的默认状态啦。然后，read-write和read-write-plaintext-only会让元素表现得像个文本域一样，可以focus以及输入内容。<br>会发现，设置了read-write和read-write-plaintext-only值的两个</p><p>标签元素是可以被focus的.<br>而这两者的区别就在于，一个可以输入富文本，而下面一个只能输入纯文本.<br>然而，抱歉地跟大家讲下，目前只有webkit内核浏览器才支持<code>read-write-plaintext-only</code>这个值，因此，我们的使用其实是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-user-modify: read-write-plaintext-only</div></pre></td></tr></table></figure></p>
 <p>我们可以在移动端使用，以及，只需要兼顾webkit内容的桌面网页项目。</p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;转载&lt;br&gt;来自&lt;a href=&quot;http://www.zhangxinxu.com&quot;&gt;张鑫旭-鑫空间-鑫生活&lt;/a&gt;&lt;br&gt;原文地址： &lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/&quot;&gt;http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;contenteditable&quot;&gt;&lt;a href=&quot;#contenteditable&quot; class=&quot;headerlink&quot; title=&quot;contenteditable&quot;&gt;&lt;/a&gt;contenteditable&lt;/h1&gt;&lt;p&gt;使用input或textare时,输入框大小固定,因此采用div,在div上增加&lt;code&gt;contenteditable=&amp;quot;true&amp;quot;&lt;/code&gt;属性.这样的话,没有placeholder属性,通过css样式&lt;code&gt;:empty:before&lt;/code&gt;,增加content解决.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
-    
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git commit message和change log编写指南</title>
-    <link href="http://yoursite.com/2016/07/26/git-commit-message-change-log/"/>
-    <id>http://yoursite.com/2016/07/26/git-commit-message-change-log/</id>
-    <published>2016-07-26T03:28:53.000Z</published>
-    <updated>2016-08-23T03:26:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>原作者：</strong>阮一峰</p>
+    <entry>
+      <title><![CDATA[git commit message和change log编写指南]]></title>
+      <url>http://yoursite.com/2016/07/26/git-commit-message-change-log/</url>
+      <content type="html"><![CDATA[<p><strong>原作者：</strong>阮一峰</p>
 <p>日期：2016年1月6日</p>
 <blockquote>
 <p> 原帖地址:<a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html" target="_blank" rel="external">Commit message 和 Change log 编写指南</a></p>
@@ -566,34 +352,12 @@
 <p>$ npm run changelog</p>
 </blockquote>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;原作者：&lt;/strong&gt;阮一峰&lt;/p&gt;
-&lt;p&gt;日期：2016年1月6日&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt; 原帖地址:&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html&quot;&gt;Commit message 和 Change log 编写指南&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;git每次提交代码，都要写commit message，否则不允许提交。&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git commit -m &amp;quot;hello world&amp;quot;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;只执行git commit，会跳出文本编辑器，让你写多行。&lt;/p&gt;
-&lt;p&gt;基本上你写什么都行但是,一般来说,commit message应该清晰明了.说明本次提交的目的.&lt;/p&gt;
-&lt;p&gt;目前,社区有很多种commit message 规范.本文介绍angular规范,这是目前最广泛的写法,比较合理和系统化,并且有配套的工具.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java问题记录</title>
-    <link href="http://yoursite.com/2016/07/12/icstest-java/"/>
-    <id>http://yoursite.com/2016/07/12/icstest-java/</id>
-    <published>2016-07-12T12:33:05.000Z</published>
-    <updated>2016-08-23T03:27:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>Java问题记录<br>前端开发怎么能不懂点后台知识？说好的前(全)端(栈)工程师呢？<br><a id="more"></a></p>
+    <entry>
+      <title><![CDATA[Java问题记录]]></title>
+      <url>http://yoursite.com/2016/07/12/icstest-java/</url>
+      <content type="html"><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>Java问题记录<br>前端开发怎么能不懂点后台知识？说好的前(全)端(栈)工程师呢？<br><a id="more"></a></p>
 <hr>
 <h3 id="string-stringbuffer与stringbuilder的区别"><a href="#string-stringbuffer与stringbuilder的区别" class="headerlink" title="string,stringbuffer与stringbuilder的区别?"></a>string,stringbuffer与stringbuilder的区别?</h3><p>1.在执行速度方面的比较：StringBuilder &gt;  StringBuffer<br>2.StringBuffer与StringBuilder，他们是字符串变量，是可改变的对象，每当我们用它们对字符串做操作时，实际上是在一个对象上操作的，不像String一样创建一些对象进行操作，所以速度就快了。<br>3.StringBuilder：线程非安全的<br>　StringBuffer：线程安全的<br>我们在字符串缓冲去被多个线程使用是，JVM不能保证StringBuilder的操作是安全的，虽然他的速度最快，但是可以保证StringBuffer是可以正确操作的。当然大多数情况下就是我们是在单线程下进行的操作，所以大多数情况下是建议用StringBuilder而不用StringBuffer的，就是速度的原因。</p>
 <p>对于三者使用的总结：</p>
@@ -664,74 +428,31 @@
 <p>其实最主要的是，list是用来处理序列的，而set是用来处理集的。Map是知道的，存储的是键值对 <br><br><strong>set一般无序不重复.map kv 结构 ,list 有序</strong></p>
 <hr>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h3 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h3&gt;&lt;p&gt;Java问题记录&lt;br&gt;前端开发怎么能不懂点后台知识？说好的前(全)端(栈)工程师呢？&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>7niu</title>
-    <link href="http://yoursite.com/2016/07/10/7niu/"/>
-    <id>http://yoursite.com/2016/07/10/7niu/</id>
-    <published>2016-07-10T05:08:29.000Z</published>
-    <updated>2016-07-25T09:46:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>由于hexo博客不能存储图片，需要自己将图片放到图床上，这里推荐7牛的云存储。对个人用户来说基本就是免费的。<br>具体方法，就不说了。这里留坑以后填充使用过程中遇到的坑。</p>
+    <entry>
+      <title><![CDATA[7niu]]></title>
+      <url>http://yoursite.com/2016/07/10/7niu/</url>
+      <content type="html"><![CDATA[<p>由于hexo博客不能存储图片，需要自己将图片放到图床上，这里推荐7牛的云存储。对个人用户来说基本就是免费的。<br>具体方法，就不说了。这里留坑以后填充使用过程中遇到的坑。</p>
 <a id="more"></a>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;由于hexo博客不能存储图片，需要自己将图片放到图床上，这里推荐7牛的云存储。对个人用户来说基本就是免费的。&lt;br&gt;具体方法，就不说了。这里留坑以后填充使用过程中遇到的坑。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="7niu" scheme="http://yoursite.com/tags/7niu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript基础巩固第一天</title>
-    <link href="http://yoursite.com/2016/07/05/JavaScript-firstday/"/>
-    <id>http://yoursite.com/2016/07/05/JavaScript-firstday/</id>
-    <published>2016-07-05T06:44:49.000Z</published>
-    <updated>2016-07-25T09:43:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>JavaScript组成部分：语法，类型，语句，关键字，保留字，操作符，对象。<br>标识符，就是指变量、函数、属性的名字，或者函数的参数。<br>按照惯例，ECMAScript标识符采用驼峰大小写格式。构造函数都以大写字母开始。<br>JavaScript中的实数常常只是真实值的一个近似表示。<br>有两种方式来访问对象的属性，点操作符或者中括号操作符。</p>
+    <entry>
+      <title><![CDATA[JavaScript基础巩固第一天]]></title>
+      <url>http://yoursite.com/2016/07/05/JavaScript-firstday/</url>
+      <content type="html"><![CDATA[<p>JavaScript组成部分：语法，类型，语句，关键字，保留字，操作符，对象。<br>标识符，就是指变量、函数、属性的名字，或者函数的参数。<br>按照惯例，ECMAScript标识符采用驼峰大小写格式。构造函数都以大写字母开始。<br>JavaScript中的实数常常只是真实值的一个近似表示。<br>有两种方式来访问对象的属性，点操作符或者中括号操作符。</p>
 <p>JavaScript五种基本数据类型，Undefined,Null,Boolean,Number和string。还有一个复杂数据类型，object。<br>从逻辑角度来看，null值表示一个空指针对象 alert(typeof null); //=&gt; “object”</p>
 <a id="more"></a>
 <p>typeof是一个操作符，不是函数。<br>JavaScript是大小写敏感的，因此typeOf完全可以是一个有效的函数名。</p>
 <p>如果定义的变量准备在将来用于保存对象，那么最好将该变量初始化为null而不是其他值，这样一来，只要直接检查null值就可以知道相应的变量是否已经保存了一个对象的引用，如if (car !=null) {  /<em> 对car对象执行某些操作</em>/  }<br>实际上，undefined值是派生自null的，因此alert(null == undefined); //true</p>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;JavaScript组成部分：语法，类型，语句，关键字，保留字，操作符，对象。&lt;br&gt;标识符，就是指变量、函数、属性的名字，或者函数的参数。&lt;br&gt;按照惯例，ECMAScript标识符采用驼峰大小写格式。构造函数都以大写字母开始。&lt;br&gt;JavaScript中的实数常常只是真实值的一个近似表示。&lt;br&gt;有两种方式来访问对象的属性，点操作符或者中括号操作符。&lt;/p&gt;
-&lt;p&gt;JavaScript五种基本数据类型，Undefined,Null,Boolean,Number和string。还有一个复杂数据类型，object。&lt;br&gt;从逻辑角度来看，null值表示一个空指针对象 alert(typeof null); //=&amp;gt; “object”&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown介绍及语法</title>
-    <link href="http://yoursite.com/2016/07/02/markdown-guide/"/>
-    <id>http://yoursite.com/2016/07/02/markdown-guide/</id>
-    <published>2016-07-02T10:34:22.000Z</published>
-    <updated>2016-08-23T03:25:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h1><blockquote>
+    <entry>
+      <title><![CDATA[markdown介绍及语法]]></title>
+      <url>http://yoursite.com/2016/07/02/markdown-guide/</url>
+      <content type="html"><![CDATA[<h1 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h1><blockquote>
 <p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。—— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">维基百科</a></p>
 </blockquote>
 <p>正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个<a href="http://www.example.com" target="_blank" rel="external">链接</a>或一个脚注[^demo]。</p>
@@ -809,38 +530,12 @@
 </tbody>
 </table>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Markdown简介&quot;&gt;&lt;a href=&quot;#Markdown简介&quot; class=&quot;headerlink&quot; title=&quot;Markdown简介&quot;&gt;&lt;/a&gt;Markdown简介&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。—— &lt;a href=&quot;https://zh.wikipedia.org/wiki/Markdown&quot;&gt;维基百科&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为&lt;strong&gt;粗体&lt;/strong&gt;或者&lt;em&gt;斜体&lt;/em&gt;，创建一个&lt;a href=&quot;http://www.example.com&quot;&gt;链接&lt;/a&gt;或一个脚注[^demo]。&lt;/p&gt;
-&lt;h2 id=&quot;文档&quot;&gt;&lt;a href=&quot;#文档&quot; class=&quot;headerlink&quot; title=&quot;文档&quot;&gt;&lt;/a&gt;文档&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;创始人 John Gruber 的 Markdown 语法说明&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://maxiang.io/&quot;&gt;马克飞象帮助文档&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.appinn.com/markdown/&quot;&gt;markdown中文语法说明&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
-    
-      <category term="Wiki" scheme="http://yoursite.com/tags/Wiki/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo第一天</title>
-    <link href="http://yoursite.com/2016/07/02/hello-world/"/>
-    <id>http://yoursite.com/2016/07/02/hello-world/</id>
-    <published>2016-07-02T06:44:49.000Z</published>
-    <updated>2016-08-18T10:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天利用coding的webIDE搭建了hexo博客。回来记录一下。</p>
+    <entry>
+      <title><![CDATA[hexo第一天]]></title>
+      <url>http://yoursite.com/2016/07/02/hello-world/</url>
+      <content type="html"><![CDATA[<p>今天利用coding的webIDE搭建了hexo博客。回来记录一下。</p>
 <p><strong>前言</strong> 之前也在github上用过hexo搭建博客，一直感觉挺好的，除了有一个问题——搭建写作环境。<br>由于Hexo是基于Node.js的，所以需要在本地电脑上安装Node.js，然后再安装Hexo，还得安装Git，一步步配置环境，有点繁琐。所以很明显存在一个问题——重装电脑后，又要配置环境，或者不能在任意一终端进行写作。<br>现在终于找到一个方法可以实现“Set up once, write everywhere”。这就是Coding.net的<code>WebIDE</code>。</p>
 <p>coding的webIDE出来时间不是很长，成熟度不如koding和c9，但是胜在访问速度快。。。毕竟是国内的服务器。coding webIDE使用不当的话，偶尔会出现一些问题，比如打不开等情况，可以点击反馈，让coding的官方人员帮你解决。</p>
 <p>首先附上两篇搭建hexo博客的通用文档</p>
@@ -1007,23 +702,8 @@
 </tbody>
 </table>
 ]]></content>
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;今天利用coding的webIDE搭建了hexo博客。回来记录一下。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt; 之前也在github上用过hexo搭建博客，一直感觉挺好的，除了有一个问题——搭建写作环境。&lt;br&gt;由于Hexo是基于Node.js的，所以需要在本地电脑上安装Node.js，然后再安装Hexo，还得安装Git，一步步配置环境，有点繁琐。所以很明显存在一个问题——重装电脑后，又要配置环境，或者不能在任意一终端进行写作。&lt;br&gt;现在终于找到一个方法可以实现“Set up once, write everywhere”。这就是Coding.net的&lt;code&gt;WebIDE&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;coding的webIDE出来时间不是很长，成熟度不如koding和c9，但是胜在访问速度快。。。毕竟是国内的服务器。coding webIDE使用不当的话，偶尔会出现一些问题，比如打不开等情况，可以点击反馈，让coding的官方人员帮你解决。&lt;/p&gt;
-&lt;p&gt;首先附上两篇搭建hexo博客的通用文档&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://hexo.io/zh-cn/docs/&quot;&gt;文档 | Hexo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/d78eeae3d659&quot;&gt;Hexo静态博客使用指南&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
-</feed>
+  
+</search>
