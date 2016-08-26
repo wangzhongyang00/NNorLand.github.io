@@ -1,7 +1,7 @@
 ---
 title: hexo第一天
 date: 2016-07-02 14:44:49
-updated: 2016-08-18 18:00:00
+updated: 2016-08-26 16:22:00
 ---
 今天利用coding的webIDE搭建了hexo博客。回来记录一下。
 
@@ -10,6 +10,9 @@ updated: 2016-08-18 18:00:00
 现在终于找到一个方法可以实现“Set up once, write everywhere”。这就是Coding.net的`WebIDE`。
 
 coding的webIDE出来时间不是很长，成熟度不如koding和c9，但是胜在访问速度快。。。毕竟是国内的服务器。coding webIDE使用不当的话，偶尔会出现一些问题，比如打不开等情况，可以点击反馈，让coding的官方人员帮你解决。
+
+* 2016.08.26补充
+coding时不时有很多问题,已放弃webIDE,回归github.将博客代码存放在hexo分支.
 
 首先附上两篇搭建hexo博客的通用文档
 
