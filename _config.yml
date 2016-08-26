@@ -4,15 +4,15 @@
 
 # Site
 title: NNorLand
-subtitle: mixed motes
-description: 瞎写
+subtitle: 瞎写
+description: 修电脑的
 author: 刘家安
 language: zh-Hans
 timezone:
-
+email: liujiaan.d@gmail.com
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://liujiaan.ren
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -64,19 +64,38 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 plugins: hexo-generate-feed
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: indigo
 
 feed:
   type: atom #feed 类型 (atom/rss2)
   path: atom.xml #rss 路径
   limit: 20 #在 rss 中最多生成的文章数(0显示所有)
 
-duoshuo_shortname: NNorLand
+#duoshuo_shortname: NNorLand
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 search:
-  path: search.xml
+  path: search.json
   field: post
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
 
 deploy:
   type: git
