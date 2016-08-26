@@ -430,7 +430,7 @@
     <link href="http://liujiaan.ren/2016/08/01/div-contenteditable/"/>
     <id>http://liujiaan.ren/2016/08/01/div-contenteditable/</id>
     <published>2016-08-01T01:23:22.000Z</published>
-    <updated>2016-08-25T06:36:18.000Z</updated>
+    <updated>2016-08-25T03:21:00.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>转载<br>来自<a href="http://www.zhangxinxu.com" target="_blank" rel="external">张鑫旭-鑫空间-鑫生活</a><br>原文地址： <a href="http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/</a></p>
@@ -442,12 +442,12 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    showLen(<span class="built_in">document</span>.getElementById(<span class="string">"test_box"</span>));</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">showLen</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> t = <span class="built_in">document</span>.getElementById(<span class="string">"test_box"</span>).innerText;</div><div class="line">        <span class="keyword">var</span> num = <span class="built_in">document</span>.getElementById(<span class="string">'str_length'</span>)</div><div class="line">        <span class="keyword">if</span> (t.length &gt; <span class="number">200</span>) &#123;</div><div class="line">            num.innerHTML = obj.innerText.length;</div><div class="line">            num.style.color= <span class="string">"red"</span>;</div><div class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">else</span> &#123;</div><div class="line">            num.innerHTML = obj.innerText.length;</div><div class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
 <blockquote>
 <ul>
-<li>注意,在获取div的内容时,不能用value,用innerText  </li>
+<li>注意,在获取div的内容时,不能用value,用innerText</li>
 </ul>
 </blockquote>
 <hr>
 <h1 id="温故知新"><a href="#温故知新" class="headerlink" title="温故知新"></a>温故知新</h1><ul>
-<li>2016-08-25补充  </li>
+<li>2016-08-25补充</li>
 </ul>
 <p>利用全浏览器都支持的contenteditable模拟文本域可以实现体验相当不错的高度跟随内容自动撑开的效果，但是呢，有个很大的问题就是HTML内容可以直接被粘贴进去.</p>
 <h1 id="提问：在HTML中，contenteditable支持的属性值是？"><a href="#提问：在HTML中，contenteditable支持的属性值是？" class="headerlink" title="提问：在HTML中，contenteditable支持的属性值是？"></a>提问：在HTML中，contenteditable支持的属性值是？</h1><p>图样图森破时候的我，脑中就只有contenteditable=”true”和contenteditable=”false”，咳咳，后来我发现自己太天真了，新的草案中明确表示还有多个其他属性值：</p>
@@ -455,7 +455,7 @@
 <p>The contenteditable attribute is an enumerated attribute whose keywords are the empty string (“”), “events”, “caret”, “typing”, “plaintext-only”, “true”, and “false”. There is one additional state, the inherit state, which is the missing value default (and the invalid value default).</p>
 </blockquote>
 <p>垂直展示下就是（不包括默认的inherit继承）：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">contenteditable=""</div><div class="line">contenteditable="events"</div><div class="line">contenteditable="caret"</div><div class="line">contenteditable="plaintext-only"</div><div class="line">contenteditable="true"</div><div class="line">contenteditable="false"</div></pre></td></tr></table></figure></p>
-<p>别问我，我也不知道”events”和”caret”是干什么用的，嘿，但是”plaintext-only”我是知道的，可以让编辑区域只能键入纯文本。这里就不需要demo了，直接下面的框框，大家可以试试，看看能不能搞富文本。  </p>
+<p>别问我，我也不知道”events”和”caret”是干什么用的，嘿，但是”plaintext-only”我是知道的，可以让编辑区域只能键入纯文本。这里就不需要demo了，直接下面的框框，大家可以试试，看看能不能搞富文本。</p>
 <p><code>&lt;div contenteditable=&quot;plaintext-only&quot;&gt;&lt;/div&gt;</code></p>
 <div style="min-height:80px;border:1px solid grey" contenteditable="plaintext-only"></div>
 
