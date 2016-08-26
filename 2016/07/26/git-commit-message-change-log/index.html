@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>git commit message和change log编写指南 | NNorLand | 瞎写</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="Git">
+  <meta name="description" content="原作者：阮一峰
+日期：2016年1月6日
+
+ 原帖地址:Commit message 和 Change log 编写指南
+
+git每次提交代码，都要写commit message，否则不允许提交。1$ git commit -m &amp;quot;hello world&amp;quot;
+只执行git commit，会跳出文本编辑器，让你写多行。
+基本上你写什么都行但是,一般来说,commit message">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git commit message和change log编写指南">
+<meta property="og:url" content="http://liujiaan.ren/2016/07/26/git-commit-message-change-log/index.html">
+<meta property="og:site_name" content="NNorLand">
+<meta property="og:description" content="原作者：阮一峰
+日期：2016年1月6日
+
+ 原帖地址:Commit message 和 Change log 编写指南
+
+git每次提交代码，都要写commit message，否则不允许提交。1$ git commit -m &amp;quot;hello world&amp;quot;
+只执行git commit，会跳出文本编辑器，让你写多行。
+基本上你写什么都行但是,一般来说,commit message">
+<meta property="og:image" content="http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/07/26/bg2016010604.png">
+<meta property="og:updated_time" content="2016-08-25T06:36:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git commit message和change log编写指南">
+<meta name="twitter:description" content="原作者：阮一峰
+日期：2016年1月6日
+
+ 原帖地址:Commit message 和 Change log 编写指南
+
+git每次提交代码，都要写commit message，否则不允许提交。1$ git commit -m &amp;quot;hello world&amp;quot;
+只执行git commit，会跳出文本编辑器，让你写多行。
+基本上你写什么都行但是,一般来说,commit message">
+<meta name="twitter:image" content="http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/07/26/bg2016010604.png">
+  
+    <link rel="alternative" href="/atom.xml" title="NNorLand" type="application/atom+xml">
+  
+  <meta name="summary" content="&lt;p&gt;&lt;strong&gt;原作者：&lt;/strong&gt;阮一峰&lt;/p&gt;
+&lt;p&gt;日期：2016年1月6日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt; 原帖地址:&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html&quot;&gt;Commit message 和 Change log 编写指南&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;git每次提交代码，都要写commit message，否则不允许提交。&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git commit -m &amp;quot;hello world&amp;quot;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;只执行git commit，会跳出文本编辑器，让你写多行。&lt;/p&gt;
+&lt;p&gt;基本上你写什么都行但是,一般来说,commit message应该清晰明了.说明本次提交的目的.&lt;/p&gt;
+&lt;p&gt;目前,社区有很多种commit message 规范.本文介绍angular规范,这是目前最广泛的写法,比较合理和系统化,并且有配套的工具.&lt;/p&gt;">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/avatar.gif"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">刘家安</h5>
+        <a href="mailto:liujiaan.d@gmail.com" title="liujiaan.d@gmail.com" class="mail">liujiaan.d@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/NNorland" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            github
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="http://www.weibo.com/vergilhk" target="_blank" >
+            <i class="icon icon-lg icon-weibo"></i>
+            微博
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/about"  >
+            <i class="icon icon-lg icon-link"></i>
+            关于
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>NNorLand &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">git commit message和change log编写指南</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">git commit message和change log编写指南</h1>
+    <h5 class="subtitle">
+        
+            <time datetime="2016-07-26T03:28:53.000Z" itemprop="datePublished" class="page-time">
+  2016-07-26
+</time>
+
+
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-git-commit-message-change-log" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meta flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一-commit-message-的作用"><span class="post-toc-text">一.commit message 的作用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二-commit-message-的格式"><span class="post-toc-text">二,commit message 的格式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-1-header"><span class="post-toc-text">2.1 header</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-type"><span class="post-toc-text">(1)type</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-scope"><span class="post-toc-text">(2)scope</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-subject"><span class="post-toc-text">(3)subject</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-2-body"><span class="post-toc-text">2.2 body</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-3-footer"><span class="post-toc-text">2.3 footer</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（1）不兼容变动"><span class="post-toc-text">（1）不兼容变动</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（2）关闭-Issue"><span class="post-toc-text">（2）关闭 Issue</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-4-Revert"><span class="post-toc-text">2.4 Revert</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#三-Commitizen"><span class="post-toc-text">三.Commitizen</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#四-生成change-log"><span class="post-toc-text">四.生成change log</span></a></li></ol>
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <p><strong>原作者：</strong>阮一峰</p>
+<p>日期：2016年1月6日</p>
+<blockquote>
+<p> 原帖地址:<a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html" target="_blank" rel="external">Commit message 和 Change log 编写指南</a></p>
+</blockquote>
+<p>git每次提交代码，都要写commit message，否则不允许提交。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m &quot;hello world&quot;</div></pre></td></tr></table></figure></p>
+<p>只执行git commit，会跳出文本编辑器，让你写多行。</p>
+<p>基本上你写什么都行但是,一般来说,commit message应该清晰明了.说明本次提交的目的.</p>
+<p>目前,社区有很多种commit message 规范.本文介绍angular规范,这是目前最广泛的写法,比较合理和系统化,并且有配套的工具.</p>
+<a id="more"></a>
+<h1 id="一-commit-message-的作用"><a href="#一-commit-message-的作用" class="headerlink" title="一.commit message 的作用"></a>一.commit message 的作用</h1><p>格式化commit message 有几个好处.</p>
+<ol>
+<li><strong>提供更多的历史信息,方便浏览.</strong><br><br>比如,下面的命令显示上次发布之后的变动,每个commit占据一行,你只要看首行,就知道某次commit的目的.<blockquote>
+<p>$ git log <last tag=""> HEAD –pretty=formate:%s</last></p>
+</blockquote>
+</li>
+</ol>
+<p><img src="http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/07/26/bg2016010604.png" alt="git commit message"></p>
+<ol>
+<li><p><strong>可以过滤某些commit(比如文档改动),以便于快速查找信息.</strong><br><br>比如,下面的命令仅显示本次发布新增加的功能.</p>
+<blockquote>
+<p>$ git log <last release=""> HEAD –grep feature</last></p>
+</blockquote>
+</li>
+<li><p><strong>可以直接从commit生成change log.</strong><br><br>change log 是发布新版本时,用来说明与上一个文档差异的文档.</p>
+</li>
+</ol>
+<h1 id="二-commit-message-的格式"><a href="#二-commit-message-的格式" class="headerlink" title="二,commit message 的格式"></a>二,commit message 的格式</h1><p>每次提交,commit message 都包括三个部分:header,body和footer.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</div><div class="line">// 空一行</div><div class="line">&lt;body&gt;</div><div class="line">// 空一行</div><div class="line">&lt;footer&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="2-1-header"><a href="#2-1-header" class="headerlink" title="2.1 header"></a>2.1 header</h2><p>header部分只有一行,包括三个字段:type(必需),scope(可选)和subject(必需).</p>
+<h3 id="1-type"><a href="#1-type" class="headerlink" title="(1)type"></a>(1)type</h3><p>用于说明commit的类别,只允许使用下面7个标识.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">feat：新功能（feature）</div><div class="line">fix：修补bug</div><div class="line">docs：文档（documentation）</div><div class="line">style： 格式（不影响代码运行的变动）</div><div class="line">refactor：重构（即不是新增功能，也不是修改bug的代码变动）</div><div class="line">test：增加测试</div><div class="line">chore：构建过程或辅助工具的变动</div></pre></td></tr></table></figure></p>
+<p>如果type为feat和fix，则该 commit 将肯定出现在 Change log 之中。其他情况（docs、chore、style、refactor、test）由你决定，要不要放入 Change log，建议是不要。</p>
+<h3 id="2-scope"><a href="#2-scope" class="headerlink" title="(2)scope"></a>(2)scope</h3><p><code>scope</code>用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。</p>
+<h3 id="3-subject"><a href="#3-subject" class="headerlink" title="(3)subject"></a>(3)subject</h3><p><code>subject</code>是 commit 目的的简短描述，不超过50个字符。</p>
+<blockquote>
+<ul>
+<li>以动词开头，使用第一人称现在时，比如change，而不是changed或changes</li>
+<li>第一个字母小写</li>
+<li>结尾不加句号（.）</li>
+</ul>
+</blockquote>
+<h2 id="2-2-body"><a href="#2-2-body" class="headerlink" title="2.2 body"></a>2.2 body</h2><p>Body 部分是对本次 commit 的详细描述，可以分成多行。下面是一个范例。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">More detailed explanatory text, if necessary.  Wrap it to</div><div class="line">about 72 characters or so.</div><div class="line"></div><div class="line">Further paragraphs come after blank lines.</div><div class="line"></div><div class="line">- Bullet points are okay, too</div><div class="line">- Use a hanging indent</div></pre></td></tr></table></figure></p>
+<p>有两个注意点。</p>
+<ul>
+<li>使用第一人称现在时，比如使用change而不是changed或changes。</li>
+<li>应该说明代码变动的动机，以及与以前行为的对比。</li>
+</ul>
+<h2 id="2-3-footer"><a href="#2-3-footer" class="headerlink" title="2.3 footer"></a>2.3 footer</h2><p>Footer 部分只用于两种情况。</p>
+<h3 id="（1）不兼容变动"><a href="#（1）不兼容变动" class="headerlink" title="（1）不兼容变动"></a>（1）不兼容变动</h3><p>如果当前代码与上一个版本不兼容，则 Footer 部分以BREAKING CHANGE开头，后面是对变动的描述、以及变动理由和迁移方法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">BREAKING CHANGE: isolate scope bindings definition has changed.</div><div class="line"></div><div class="line">    To migrate the code follow the example below:</div><div class="line"></div><div class="line">    Before:</div><div class="line"></div><div class="line">    scope: &#123;</div><div class="line">      myAttr: &apos;attribute&apos;,</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    After:</div><div class="line"></div><div class="line">    scope: &#123;</div><div class="line">      myAttr: &apos;@&apos;,</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    The removed `inject` wasn&apos;t generaly useful for directives so there should be no code using it.</div></pre></td></tr></table></figure></p>
+<h3 id="（2）关闭-Issue"><a href="#（2）关闭-Issue" class="headerlink" title="（2）关闭 Issue"></a>（2）关闭 Issue</h3><p>如果当前 commit 针对某个issue，那么可以在 Footer 部分关闭这个 issue 。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Closes #234</div></pre></td></tr></table></figure></p>
+<p>也可以一次关闭多个 issue 。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Closes #123, #245, #992</div></pre></td></tr></table></figure></p>
+<h2 id="2-4-Revert"><a href="#2-4-Revert" class="headerlink" title="2.4 Revert"></a>2.4 Revert</h2><p>还有一种特殊情况，如果当前 commit 用于撤销以前的 commit，则必须以revert:开头，后面跟着被撤销 Commit 的 Header。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">revert: feat(pencil): add &apos;graphiteWidth&apos; option</div><div class="line"></div><div class="line">This reverts commit 667ecc1654a317a13331b17617d973392f415f02.</div></pre></td></tr></table></figure></p>
+<p>Body部分的格式是固定的，必须写成<code>This reverts commit &amp;lt;hash&gt;</code>.，其中的hash是被撤销 commit 的 SHA 标识符。<br>如果当前 commit 与被撤销的 commit，在同一个发布（release）里面，那么它们都不会出现在 Change log 里面。如果两者在不同的发布，那么当前 commit，会出现在 Change log 的Reverts小标题下面。</p>
+<h1 id="三-Commitizen"><a href="#三-Commitizen" class="headerlink" title="三.Commitizen"></a>三.Commitizen</h1><p>Commitizen是一个撰写合格 Commit message 的工具。<br>安装命令如下。</p>
+<blockquote>
+<p>$ npm install -g commitizen</p>
+</blockquote>
+<p>然后，在项目目录里，运行下面的命令，使其支持 Angular 的 Commit message 格式。</p>
+<blockquote>
+<p>$ commitizen init cz-conventional-changelog –save –save-exact</p>
+</blockquote>
+<p>以后，凡是用到<code>git commit</code>命令，一律改为使用<code>git cz</code>。这时，就会出现选项，用来生成符合格式的 Commit message。</p>
+<h1 id="四-生成change-log"><a href="#四-生成change-log" class="headerlink" title="四.生成change log"></a>四.生成change log</h1><p>如果你的所有 Commit 都符合 Angular 格式，那么发布新版本时， Change log 就可以用脚本自动生成（例1，例2，例3）。<br>生成的文档包括以下三个部分。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">New features</div><div class="line">Bug fixes</div><div class="line">Breaking changes.</div></pre></td></tr></table></figure></p>
+<p>每个部分都会罗列相关的 commit ，并且有指向这些 commit 的链接。当然，生成的文档允许手动修改，所以发布前，你还可以添加其他内容。<br><code>conventional-changelog</code> 就是生成 <code>Change log</code> 的工具，运行下面的命令即可。</p>
+<blockquote>
+<p>$ npm install -g conventional-changelog<br><br>$ cd my-project<br><br>$ conventional-changelog -p angular -i CHANGELOG.md -w</p>
+</blockquote>
+<p>上面命令不会覆盖以前的 Change log，只会在CHANGELOG.md的头部加上自从上次发布以来的变动。</p>
+<p>如果你想生成所有发布的 Change log，要改为运行下面的命令。</p>
+<blockquote>
+<p>$ conventional-changelog -p angular -i CHANGELOG.md -w -r 0</p>
+</blockquote>
+<p>为了方便使用，可以将其写入package.json的scripts字段。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;changelog&quot;: &quot;conventional-changelog -p angular -i CHANGELOG.md -w -r 0&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>以后，直接运行下面的命令即可。</p>
+<blockquote>
+<p>$ npm run changelog</p>
+</blockquote>
+
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://liujiaan.ren/2016/07/26/git-commit-message-change-log/" target="_blank" rel="external">http://liujiaan.ren/2016/07/26/git-commit-message-change-log/</a>
+                </p>
+                <footer><cite><a href="http://liujiaan.ren">@NNorLand</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/08/01/div-contenteditable/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">div实现高度撑开的输入框</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/07/12/icstest-java/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Java问题记录</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="git-commit-message-change-log" data-title="git commit message和change log编写指南" data-url="http://liujiaan.ren/2016/07/26/git-commit-message-change-log/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"NNorLand"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

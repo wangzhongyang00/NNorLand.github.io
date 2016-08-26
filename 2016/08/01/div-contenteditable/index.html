@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>div实现高度撑开的输入框 | NNorLand | 瞎写</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="CSS,html">
+  <meta name="description" content="转载来自张鑫旭-鑫空间-鑫生活原文地址： http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/
+
+contenteditable使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有plac">
+<meta property="og:type" content="article">
+<meta property="og:title" content="div实现高度撑开的输入框">
+<meta property="og:url" content="http://liujiaan.ren/2016/08/01/div-contenteditable/index.html">
+<meta property="og:site_name" content="NNorLand">
+<meta property="og:description" content="转载来自张鑫旭-鑫空间-鑫生活原文地址： http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/
+
+contenteditable使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有plac">
+<meta property="og:updated_time" content="2016-08-25T06:36:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="div实现高度撑开的输入框">
+<meta name="twitter:description" content="转载来自张鑫旭-鑫空间-鑫生活原文地址： http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/
+
+contenteditable使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有plac">
+  
+    <link rel="alternative" href="/atom.xml" title="NNorLand" type="application/atom+xml">
+  
+  <meta name="summary" content="&lt;blockquote&gt;
+&lt;p&gt;转载&lt;br&gt;来自&lt;a href=&quot;http://www.zhangxinxu.com&quot;&gt;张鑫旭-鑫空间-鑫生活&lt;/a&gt;&lt;br&gt;原文地址： &lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/&quot;&gt;http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;contenteditable&quot;&gt;&lt;a href=&quot;#contenteditable&quot; class=&quot;headerlink&quot; title=&quot;contenteditable&quot;&gt;&lt;/a&gt;contenteditable&lt;/h1&gt;&lt;p&gt;使用input或textare时,输入框大小固定,因此采用div,在div上增加&lt;code&gt;contenteditable=&amp;quot;true&amp;quot;&lt;/code&gt;属性.这样的话,没有placeholder属性,通过css样式&lt;code&gt;:empty:before&lt;/code&gt;,增加content解决.&lt;/p&gt;">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/avatar.gif"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">刘家安</h5>
+        <a href="mailto:liujiaan.d@gmail.com" title="liujiaan.d@gmail.com" class="mail">liujiaan.d@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/NNorland" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            github
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="http://www.weibo.com/vergilhk" target="_blank" >
+            <i class="icon icon-lg icon-weibo"></i>
+            微博
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/about"  >
+            <i class="icon icon-lg icon-link"></i>
+            关于
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>NNorLand &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">div实现高度撑开的输入框</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">div实现高度撑开的输入框</h1>
+    <h5 class="subtitle">
+        
+            <time datetime="2016-08-01T01:23:22.000Z" itemprop="datePublished" class="page-time">
+  2016-08-01
+</time>
+
+
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-div-contenteditable" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meta flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#contenteditable"><span class="post-toc-text">contenteditable</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#温故知新"><span class="post-toc-text">温故知新</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#提问：在HTML中，contenteditable支持的属性值是？"><span class="post-toc-text">提问：在HTML中，contenteditable支持的属性值是？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#与contenteditable属性无关的CSS控制法"><span class="post-toc-text">与contenteditable属性无关的CSS控制法</span></a></li></ol>
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <blockquote>
+<p>转载<br>来自<a href="http://www.zhangxinxu.com" target="_blank" rel="external">张鑫旭-鑫空间-鑫生活</a><br>原文地址： <a href="http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/</a></p>
+</blockquote>
+<h1 id="contenteditable"><a href="#contenteditable" class="headerlink" title="contenteditable"></a>contenteditable</h1><p>使用input或textare时,输入框大小固定,因此采用div,在div上增加<code>contenteditable=&quot;true&quot;</code>属性.这样的话,没有placeholder属性,通过css样式<code>:empty:before</code>,增加content解决.</p>
+<a id="more"></a>
+<p>下面是一个示例<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test_box"</span> <span class="attr">contenteditable</span>=<span class="string">"true"</span> <span class="attr">onpaste</span>=<span class="string">"return false"</span> <span class="attr">data-placeholder</span>=<span class="string">"聊聊这组照片"</span> <span class="attr">id</span>=<span class="string">"test_box"</span> <span class="attr">onKeyUp</span>=<span class="string">"showLen(this);"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align: right;padding-right: 0.8em"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"str_length"</span> <span class="attr">class</span>=<span class="string">"str_length"</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>/200<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.test_box</span> &#123;</div><div class="line">    <span class="attribute">min-height</span>: <span class="number">100px</span>;</div><div class="line">    <span class="attribute">max-height</span>: <span class="number">300px</span>;</div><div class="line">    <span class="attribute">margin-left</span>: auto;</div><div class="line">    <span class="attribute">margin-right</span>: auto;</div><div class="line">    <span class="attribute">padding</span>: <span class="number">0.8em</span>;</div><div class="line">    <span class="attribute">padding-bottom</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">outline</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">word-wrap</span>: break-word;</div><div class="line">    <span class="attribute">overflow-x</span>: hidden;</div><div class="line">    <span class="attribute">overflow-y</span>: auto;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.test_box</span>:empty:before &#123;</div><div class="line">    <span class="attribute">content</span>: attr(data-placeholder);</div><div class="line">    <span class="attribute">color</span>:<span class="number">#d3d3d3</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.test_box</span>:focus:before&#123;</div><div class="line">    <span class="attribute">content</span>:none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    showLen(<span class="built_in">document</span>.getElementById(<span class="string">"test_box"</span>));</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">showLen</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> t = <span class="built_in">document</span>.getElementById(<span class="string">"test_box"</span>).innerText;</div><div class="line">        <span class="keyword">var</span> num = <span class="built_in">document</span>.getElementById(<span class="string">'str_length'</span>)</div><div class="line">        <span class="keyword">if</span> (t.length &gt; <span class="number">200</span>) &#123;</div><div class="line">            num.innerHTML = obj.innerText.length;</div><div class="line">            num.style.color= <span class="string">"red"</span>;</div><div class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">else</span> &#123;</div><div class="line">            num.innerHTML = obj.innerText.length;</div><div class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>注意,在获取div的内容时,不能用value,用innerText  </li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="温故知新"><a href="#温故知新" class="headerlink" title="温故知新"></a>温故知新</h1><ul>
+<li>2016-08-25补充  </li>
+</ul>
+<p>利用全浏览器都支持的contenteditable模拟文本域可以实现体验相当不错的高度跟随内容自动撑开的效果，但是呢，有个很大的问题就是HTML内容可以直接被粘贴进去.</p>
+<h1 id="提问：在HTML中，contenteditable支持的属性值是？"><a href="#提问：在HTML中，contenteditable支持的属性值是？" class="headerlink" title="提问：在HTML中，contenteditable支持的属性值是？"></a>提问：在HTML中，contenteditable支持的属性值是？</h1><p>图样图森破时候的我，脑中就只有contenteditable=”true”和contenteditable=”false”，咳咳，后来我发现自己太天真了，新的草案中明确表示还有多个其他属性值：</p>
+<blockquote>
+<p>The contenteditable attribute is an enumerated attribute whose keywords are the empty string (“”), “events”, “caret”, “typing”, “plaintext-only”, “true”, and “false”. There is one additional state, the inherit state, which is the missing value default (and the invalid value default).</p>
+</blockquote>
+<p>垂直展示下就是（不包括默认的inherit继承）：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">contenteditable=""</div><div class="line">contenteditable="events"</div><div class="line">contenteditable="caret"</div><div class="line">contenteditable="plaintext-only"</div><div class="line">contenteditable="true"</div><div class="line">contenteditable="false"</div></pre></td></tr></table></figure></p>
+<p>别问我，我也不知道”events”和”caret”是干什么用的，嘿，但是”plaintext-only”我是知道的，可以让编辑区域只能键入纯文本。这里就不需要demo了，直接下面的框框，大家可以试试，看看能不能搞富文本。  </p>
+<p><code>&lt;div contenteditable=&quot;plaintext-only&quot;&gt;&lt;/div&gt;</code></p>
+<div style="min-height:80px;border:1px solid grey" contenteditable="plaintext-only"></div>
+
+<h1 id="与contenteditable属性无关的CSS控制法"><a href="#与contenteditable属性无关的CSS控制法" class="headerlink" title="与contenteditable属性无关的CSS控制法"></a>与contenteditable属性无关的CSS控制法</h1><p>一个div元素，要让其可编辑，也就是可读写，contenteditable属性是最常用方法，做前端的基本上都知道。但是，知道CSS中有属性可以让普通元素可读写的的同学怕是就少多了。</p>
+<p>主角亮相：user-modify.</p>
+<p>支持属性值如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">user-modify: read-only;</div><div class="line">user-modify: read-write;</div><div class="line">user-modify: write-only;</div><div class="line">user-modify: read-write-plaintext-only;</div></pre></td></tr></table></figure></p>
+<p>其中，write-only不用在意，当下这个年代，基本上没有浏览器支持，以后估计也不会有。read-only表示只读，就是普通元素的默认状态啦。然后，read-write和read-write-plaintext-only会让元素表现得像个文本域一样，可以focus以及输入内容。<br>会发现，设置了read-write和read-write-plaintext-only值的两个</p><p>标签元素是可以被focus的.<br>而这两者的区别就在于，一个可以输入富文本，而下面一个只能输入纯文本.<br>然而，抱歉地跟大家讲下，目前只有webkit内核浏览器才支持<code>read-write-plaintext-only</code>这个值，因此，我们的使用其实是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-user-modify: read-write-plaintext-only</div></pre></td></tr></table></figure></p>
+<p>我们可以在移动端使用，以及，只需要兼顾webkit内容的桌面网页项目。</p>
+
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="http://liujiaan.ren/2016/08/01/div-contenteditable/" target="_blank" rel="external">http://liujiaan.ren/2016/08/01/div-contenteditable/</a>
+                </p>
+                <footer><cite><a href="http://liujiaan.ren">@NNorLand</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/08/01/yoeman-generator/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">yoeman-generator各种构造器,轮子</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/07/26/git-commit-message-change-log/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">git commit message和change log编写指南</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="div-contenteditable" data-title="div实现高度撑开的输入框" data-url="http://liujiaan.ren/2016/08/01/div-contenteditable/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"NNorLand"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
