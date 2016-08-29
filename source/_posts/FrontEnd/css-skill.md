@@ -27,28 +27,4 @@ tags: CSS
 ```
 来源: [css中如何规定某一元素高度等于其宽度](https://segmentfault.com/q/1010000002629233 'blank')
 
-2. 移动端解决fixed和input获取焦点软键盘弹出影响定位的问题
-添加css
-```CSS
-.fixfixed.navbar-fixed-top {
-    position: absolute;
-}
-```
-添加JS
-```javascript
-$(function () {
-    if (Modernizr.touch) {
-        $(document).on('focus', 'input', function () {
-            $(".navbar-fixed-top").addClass('fixfixed');
-        });
-
-        $(document).on('blur', 'input', function () {
-            $(".navbar-fixed-top").removeClass('fixfixed');
-        });
-    }
-});
-```
-参考:[修复position:fixed在ios虚拟键盘弹出时错位的bug](http://www.w3cfuns.com/notes/17861/1e2c8ed08d6216686b1fbae0213ca145.html)
-> 仅作参考,不限于bootstrap
-
-3. iOS   textarea会有样式问题,最好不用,用div
+2. iOS textarea,默认样式,字体颜色,目前未知.最好不用,用div
