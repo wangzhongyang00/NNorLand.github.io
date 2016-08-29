@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liujiaan.ren/"/>
-  <updated>2016-08-29T05:54:25.000Z</updated>
+  <updated>2016-08-29T05:58:13.000Z</updated>
   <id>http://liujiaan.ren/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://liujiaan.ren/2016/08/29/FrontEnd/jquery-on-append/"/>
     <id>http://liujiaan.ren/2016/08/29/FrontEnd/jquery-on-append/</id>
     <published>2016-08-29T03:53:00.000Z</published>
-    <updated>2016-08-29T05:54:25.000Z</updated>
+    <updated>2016-08-29T05:58:13.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是已经加载好的元素,都能生效.<br>查阅资料,发现,原来是很简单的问题,jQuery的<code>on()</code>方法本身就是动态绑定.只不过是参数设置的问题.</p>
@@ -292,7 +292,7 @@
     <link href="http://liujiaan.ren/2016/08/18/FrontEnd/css-skill/"/>
     <id>http://liujiaan.ren/2016/08/18/FrontEnd/css-skill/</id>
     <published>2016-08-18T07:36:09.000Z</published>
-    <updated>2016-08-29T04:46:55.000Z</updated>
+    <updated>2016-08-29T10:18:22.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="CSS小技巧整理"><a href="#CSS小技巧整理" class="headerlink" title="CSS小技巧整理"></a>CSS小技巧整理</h1><a id="more"></a>
 <ol>
@@ -309,6 +309,9 @@
 <blockquote>
 <p>仅作参考,不限于bootstrap</p>
 </blockquote>
+<ol>
+<li>iOS   textarea会有样式问题,最好不用,用div</li>
+</ol>
 ]]></content>
     
     <summary type="html">
@@ -709,7 +712,7 @@
     <link href="http://liujiaan.ren/2016/07/10/7niu/"/>
     <id>http://liujiaan.ren/2016/07/10/7niu/</id>
     <published>2016-07-10T05:08:29.000Z</published>
-    <updated>2016-08-25T06:36:18.000Z</updated>
+    <updated>2016-08-29T06:21:57.000Z</updated>
     
     <content type="html"><![CDATA[<p>由于hexo博客不能存储图片，需要自己将图片放到图床上，这里推荐7牛的云存储。对个人用户来说基本就是免费的。<br>具体方法，就不说了。这里留坑以后填充使用过程中遇到的坑。</p>
 <a id="more"></a>
