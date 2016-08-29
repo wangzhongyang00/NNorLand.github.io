@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://liujiaan.ren/2016/08/18/FrontEnd/css-skill/index.html">
 <meta property="og:site_name" content="NNorLand">
 <meta property="og:description" content="CSS小技巧整理">
-<meta property="og:updated_time" content="2016-08-29T10:18:22.000Z">
+<meta property="og:updated_time" content="2016-08-29T10:31:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS小技巧整理">
 <meta name="twitter:description" content="CSS小技巧整理">
@@ -168,16 +168,7 @@
 </ol>
 <p>来源: <a href="https://segmentfault.com/q/1010000002629233" title="blank" target="_blank" rel="external">css中如何规定某一元素高度等于其宽度</a></p>
 <ol>
-<li>移动端解决fixed和input获取焦点软键盘弹出影响定位的问题<br>添加css<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.fixfixed</span><span class="selector-class">.navbar-fixed-top</span> &#123;</div><div class="line">    <span class="attribute">position</span>: absolute;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>添加JS<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (Modernizr.touch) &#123;</div><div class="line">        $(<span class="built_in">document</span>).on(<span class="string">'focus'</span>, <span class="string">'input'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">            $(<span class="string">".navbar-fixed-top"</span>).addClass(<span class="string">'fixfixed'</span>);</div><div class="line">        &#125;);</div><div class="line"></div><div class="line">        $(<span class="built_in">document</span>).on(<span class="string">'blur'</span>, <span class="string">'input'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">            $(<span class="string">".navbar-fixed-top"</span>).removeClass(<span class="string">'fixfixed'</span>);</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>参考:<a href="http://www.w3cfuns.com/notes/17861/1e2c8ed08d6216686b1fbae0213ca145.html" target="_blank" rel="external">修复position:fixed在ios虚拟键盘弹出时错位的bug</a></p>
-<blockquote>
-<p>仅作参考,不限于bootstrap</p>
-</blockquote>
-<ol>
-<li>iOS   textarea会有样式问题,最好不用,用div</li>
+<li>iOS textarea,默认样式,字体颜色,目前未知.最好不用,用div</li>
 </ol>
 
             <blockquote>
