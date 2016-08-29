@@ -50,3 +50,5 @@ $(function () {
 ```
 参考:[修复position:fixed在ios虚拟键盘弹出时错位的bug](http://www.w3cfuns.com/notes/17861/1e2c8ed08d6216686b1fbae0213ca145.html)
 > 仅作参考,不限于bootstrap
+
+3. iOS   textarea会有样式问题,最好不用,用div
