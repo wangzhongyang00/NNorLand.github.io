@@ -163,9 +163,9 @@
     <div class="post-content" id="post-content" itemprop="postContent" >
     
          
- 开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题. 
+ 开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是已经加载好的元素,都能生效. 查阅资料,发现,原来是很简单的问题,jQuery的 on() 方法本身就是动态绑定.只不过是参数设置的问题. 
  
-
+ jQuery on()方法描述如下       1      .on( events [, selector ] [, da
     
         <a href="/2016/08/29/FrontEnd/jquery-on-append/" class="post-more waves-effect waves-button">
             阅读全文...

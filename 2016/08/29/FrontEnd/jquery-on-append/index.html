@@ -10,16 +10,22 @@
   
   
   <meta name="keywords" content="JavaScript">
-  <meta name="description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题.">
+  <meta name="description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是已经加载好的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的on()方法本身就是动态绑定.只不过是参数设置的问题.
+
+jQuery on()方法描述如下1.on( events [, selector ] [, data ], handler(eventOb">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery插入元素动态绑定事件">
 <meta property="og:url" content="http://liujiaan.ren/2016/08/29/FrontEnd/jquery-on-append/index.html">
 <meta property="og:site_name" content="NNorLand">
-<meta property="og:description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题.">
-<meta property="og:updated_time" content="2016-08-29T04:46:36.000Z">
+<meta property="og:description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是已经加载好的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的on()方法本身就是动态绑定.只不过是参数设置的问题.
+
+jQuery on()方法描述如下1.on( events [, selector ] [, data ], handler(eventOb">
+<meta property="og:updated_time" content="2016-08-29T05:54:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery插入元素动态绑定事件">
-<meta name="twitter:description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题.">
+<meta name="twitter:description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是已经加载好的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的on()方法本身就是动态绑定.只不过是参数设置的问题.
+
+jQuery on()方法描述如下1.on( events [, selector ] [, data ], handler(eventOb">
   
     <link rel="alternative" href="/atom.xml" title="NNorLand" type="application/atom+xml">
   
@@ -162,8 +168,13 @@
 
             <div class="post-content" id="post-content" itemprop="postContent">
             <blockquote>
-<p>开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题.</p>
+<p>开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是已经加载好的元素,都能生效.<br>查阅资料,发现,原来是很简单的问题,jQuery的<code>on()</code>方法本身就是动态绑定.只不过是参数设置的问题.</p>
 </blockquote>
+<p>jQuery on()方法描述如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.on( events [, selector ] [, data ], handler(eventObject) )</div></pre></td></tr></table></figure></p>
+<p>当事件冒泡到document对象时，检测事件的target，如果与传入的选择符（这里是button）匹配，就触发事件，否则不触发。</p>
+<p>jquery中绑定事件一般使用bind，或者click，但是这只能是对已经加载好的元素定义事件，那些后来添加插入的元素则需要另行绑定。在1.7版本以前使用live。但是在1.8版本以后推荐使用on。这里介绍jQuery中如何给动态添加的元素绑定事件<br>在实际开发中会遇到要给动态生成的html元素绑定触发事件的情况<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"testdiv"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>需要给<code>&lt;ul&gt;</code>里面动态添加的<code>&lt;li&gt;</code>标签添加click事件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#testdiv ul"</span>).on(<span class="string">"click"</span>,<span class="string">"li"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">     <span class="comment">//do something here</span></div><div class="line"> &#125;);</div></pre></td></tr></table></figure></p>
+<p><strong>一个简单的事件绑定如 <code>$(&#39;button&#39;).on(&#39;click&#39;,function(){});</code> 与<code>bind()</code>无二样。</strong></p>
 
             <blockquote>
                 <p>
