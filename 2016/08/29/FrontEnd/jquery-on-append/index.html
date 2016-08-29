@@ -3,26 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>yoeman-generator各种构造器,轮子 | NNorLand | 瞎写</title>
+  <title>jQuery插入元素动态绑定事件 | NNorLand | 瞎写</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="Nodejs,Yeoman">
-  <meta name="description" content="yeoman官网提供了很多构造器,免去了自己构建的烦恼.
-地址:http://yeoman.io/generators/">
+  <meta name="keywords" content="JavaScript">
+  <meta name="description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="yoeman-generator各种构造器,轮子">
-<meta property="og:url" content="http://liujiaan.ren/2016/08/01/yoeman-generator/index.html">
+<meta property="og:title" content="jQuery插入元素动态绑定事件">
+<meta property="og:url" content="http://liujiaan.ren/2016/08/29/FrontEnd/jquery-on-append/index.html">
 <meta property="og:site_name" content="NNorLand">
-<meta property="og:description" content="yeoman官网提供了很多构造器,免去了自己构建的烦恼.
-地址:http://yeoman.io/generators/">
-<meta property="og:updated_time" content="2016-08-25T06:36:18.000Z">
+<meta property="og:description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题.">
+<meta property="og:updated_time" content="2016-08-29T04:46:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yoeman-generator各种构造器,轮子">
-<meta name="twitter:description" content="yeoman官网提供了很多构造器,免去了自己构建的烦恼.
-地址:http://yeoman.io/generators/">
+<meta name="twitter:title" content="jQuery插入元素动态绑定事件">
+<meta name="twitter:description" content="开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题.">
   
     <link rel="alternative" href="/atom.xml" title="NNorLand" type="application/atom+xml">
   
@@ -111,7 +108,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">yoeman-generator各种构造器,轮子</div>
+        <div class="flex-col header-title ellipsis">jQuery插入元素动态绑定事件</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -128,11 +125,11 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">yoeman-generator各种构造器,轮子</h1>
+    <h1 class="author">jQuery插入元素动态绑定事件</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-08-01T08:33:45.000Z" itemprop="datePublished" class="page-time">
-  2016-08-01
+            <time datetime="2016-08-29T03:53:00.000Z" itemprop="datePublished" class="page-time">
+  2016-08-29
 </time>
 
 
@@ -142,11 +139,11 @@
 </header>
 
     <div class="container body-wrap">
-      <article id="post-yoeman-generator" 
+      <article id="post-FrontEnd/jquery-on-append" 
   class="article article-type-post" itemprop="blogPost">
     <div class="post-meta flex-row">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nodejs/">Nodejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Yeoman/">Yeoman</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
 
     </div>
     <div class="post-body">
@@ -164,13 +161,14 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>yeoman官网提供了很多构造器,免去了自己构建的烦恼.</p>
-<p>地址:<a href="http://yeoman.io/generators/" target="_blank" rel="external">http://yeoman.io/generators/</a></p>
+            <blockquote>
+<p>开发中遇到了一个问题,jQuery事件绑定的时候,只对DOM中存在的元素生效,不能像css选择器那样,不论是插入的元素还是本身存在的元素,都能生效.查阅资料,发现,原来是很简单的问题,jQuery的事件绑定本身就是动态绑定.只不过是参数设置的问题.</p>
+</blockquote>
 
             <blockquote>
                 <p>
                 本文地址：
-                <a href="http://liujiaan.ren/2016/08/01/yoeman-generator/" target="_blank" rel="external">http://liujiaan.ren/2016/08/01/yoeman-generator/</a>
+                <a href="http://liujiaan.ren/2016/08/29/FrontEnd/jquery-on-append/" target="_blank" rel="external">http://liujiaan.ren/2016/08/29/FrontEnd/jquery-on-append/</a>
                 </p>
                 <footer><cite><a href="http://liujiaan.ren">@NNorLand</a></cite></footer>
             </blockquote>
@@ -178,19 +176,12 @@
             
 <nav class="post-nav">
   
-    <div class="waves-block waves-effect prev fl">
-      <a href="/2016/08/04/mobile-apter/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">移动端高清屏图片适配</h4>
-      </a>
-    </div>
-  
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/08/01/div-contenteditable/" id="post-next" class="post-nav-link">
+      <a href="/2016/08/22/FrontEnd/ios-web-fixed-input-bug/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">div实现高度撑开的输入框</h4>
+        <h4 class="title">Web移动端Fixed布局的解决方案</h4>
       </a>
     </div>
   
@@ -201,7 +192,7 @@
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="yoeman-generator各种构造器,轮子" data-title="yoeman-generator各种构造器,轮子" data-url="http://liujiaan.ren/2016/08/01/yoeman-generator/index.html"></div>
+	<div class="ds-thread" data-thread-key="jQuery插入元素动态绑定事件" data-title="jQuery插入元素动态绑定事件" data-url="http://liujiaan.ren/2016/08/29/FrontEnd/jquery-on-append/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
