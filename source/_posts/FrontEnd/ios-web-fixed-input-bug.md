@@ -1,6 +1,7 @@
 ---
 title: Web移动端Fixed布局的解决方案
 date: 2016-08-22 14:32:57
+p: FrontEnd
 tags: [html,CSS,移动开发]
 ---
 *转载自:[http://efe.baidu.com/blog/mobile-fixed-layout/](http://efe.baidu.com/blog/mobile-fixed-layout/)*

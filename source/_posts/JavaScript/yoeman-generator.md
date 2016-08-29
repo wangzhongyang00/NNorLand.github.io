@@ -1,6 +1,7 @@
 ---
 title: yoeman-generator各种构造器,轮子
 date: 2016-08-01 16:33:45
+p: JavaScript
 tags: [Nodejs,Yeoman]
 ---
 yeoman官网提供了很多构造器,免去了自己构建的烦恼.

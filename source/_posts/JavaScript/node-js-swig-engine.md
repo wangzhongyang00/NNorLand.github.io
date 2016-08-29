@@ -1,6 +1,7 @@
 ---
 title: swig模板引擎
 date: 2016-08-19 17:30:53
+p: JavaScript
 tags: [Nodejs,JavaScript,html]
 ---
 现在有很多视图引擎,jade,swig等.用过jade,感觉不是很喜欢.还是`.html`看起来舒服一点.  

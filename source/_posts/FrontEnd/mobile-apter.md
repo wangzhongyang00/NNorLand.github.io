@@ -1,6 +1,7 @@
 ---
 title: 移动端高清屏图片适配
 date: 2016-08-04 16:48:59
+p: FrontEnd
 tags: [移动开发,html,CSS]
 ---
 参考[张鑫旭博客](http://www.zhangxinxu.com/wordpress/2014/10/responsive-images-srcset-size-w-descriptor/ 'blank')

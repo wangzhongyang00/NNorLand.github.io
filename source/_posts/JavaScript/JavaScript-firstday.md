@@ -1,5 +1,6 @@
 ---
 title: JavaScript基础巩固第一天
+p: JacaScript
 date: 2016-07-05 14:44:49
 tags: JavaScript
 ---

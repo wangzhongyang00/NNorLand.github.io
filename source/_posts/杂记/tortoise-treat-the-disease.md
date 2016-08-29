@@ -1,6 +1,7 @@
 ---
 title: 陆龟常见病的小窍门还有常识
 date: 2016-08-23 10:56:03
+p: 杂记
 tags: [花鸟虫鱼,陆龟]
 ---
 转载自[爬行天下](http://bbs.pxtx.com/)的一位养龟近十年的龟友[五块钱](http://bbs.pxtx.com/space-uid-261910.do)的帖子.
