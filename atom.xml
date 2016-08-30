@@ -29,8 +29,7 @@
 <p>当事件冒泡到document对象时，检测事件的target，如果与传入的选择符（这里是button）匹配，就触发事件，否则不触发。</p>
 <p>jquery中绑定事件一般使用bind，或者click，但是这只能是对已经加载好的元素定义事件，那些后来添加插入的元素则需要另行绑定。在1.7版本以前使用live。但是在1.8版本以后推荐使用on。这里介绍jQuery中如何给动态添加的元素绑定事件<br>在实际开发中会遇到要给动态生成的html元素绑定触发事件的情况<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"testdiv"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>需要给<code>&lt;ul&gt;</code>里面动态添加的<code>&lt;li&gt;</code>标签添加click事件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#testdiv ul"</span>).on(<span class="string">"click"</span>,<span class="string">"li"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">     <span class="comment">//do something here</span></div><div class="line"> &#125;);</div></pre></td></tr></table></figure></p>
-<p><strong>一个简单的事件绑定如 <code>$(&#39;button&#39;).on(&#39;click&#39;,function(){});</code> 与<code>bind()</code>无二样。</strong></p>
-]]></content>
+<p><strong>一个简单的事件绑定如 <code>$(&#39;button&#39;).on(&#39;click&#39;,function(){});</code> 与<code>bind()</code>无二样。</strong></p>]]></content>
     
     <summary type="html">
     
@@ -70,8 +69,7 @@
 </tr>
 </tbody>
 </table>
-<p>35岁能财务自由吗 ? 不可能 ? 没出息.</p>
-]]></content>
+<p>35岁能财务自由吗 ? 不可能 ? 没出息.</p>]]></content>
     
     <summary type="html">
     
@@ -129,8 +127,7 @@
 <h3 id="入龟的问题"><a href="#入龟的问题" class="headerlink" title="入龟的问题"></a>入龟的问题</h3><p>这里再次建议新手不要随便入10CM以下的小龟，很容易出问题，以前一朋友搞养殖场的时候，一孵化等蛋黄吸收完了，就大批出出去了，这类龟是非常容易死的，刚破壳的小龟大概有差不多4CM，那些买的5CM左右的龟的朋友，现在你知道情况了么？</p>
 <h3 id="垫材问题"><a href="#垫材问题" class="headerlink" title="垫材问题"></a>垫材问题</h3><p>相信很多龟友都考虑过的问题，本人养龟呢，是越来越懒，一开始会买专门的垫材，后来发现瓷砖反铺才是王道，再后来，直接用报纸了，大号小号把报纸一卷就扔，换一张海阔天空啊！（不过现在龟养大后，纯放养，我的豹会自己跑到厕所找滩有水的地方自行解决，厉害吧） 当然楼主我是个懒人，能不管的就不管了，其实什么垫材只要龟龟适应就行，这里比较不推荐的就有 树皮，还有粟米沙  ，前者容易产生粉尘，而且空气潮湿的时候容易滋生细菌；后者容易被贪吃的龟误食。</p>
 <h3 id="生长纹"><a href="#生长纹" class="headerlink" title="生长纹"></a>生长纹</h3><p>要长个一定得爆生长纹，但是爆了生长纹却不一定会长个。</p>
-<h3 id="关于训练龟龟的问题"><a href="#关于训练龟龟的问题" class="headerlink" title="关于训练龟龟的问题"></a>关于训练龟龟的问题</h3><p>如果经常散养，训练龟龟定点BB是完全可行的，我有成功案例，先让它习惯在有水潮湿的地方BB，然后慢慢让其BB时熟悉厕所环境，久而久之一定行。</p>
-]]></content>
+<h3 id="关于训练龟龟的问题"><a href="#关于训练龟龟的问题" class="headerlink" title="关于训练龟龟的问题"></a>关于训练龟龟的问题</h3><p>如果经常散养，训练龟龟定点BB是完全可行的，我有成功案例，先让它习惯在有水潮湿的地方BB，然后慢慢让其BB时熟悉厕所环境，久而久之一定行。</p>]]></content>
     
     <summary type="html">
     
@@ -185,8 +182,7 @@
 <li>最好将 header 和 footer 元素的 touchmove 事件禁止，以防止滚动在上面触发了部分浏览器全屏模式切换，而导致顶部地址栏和底部工具栏遮挡住 header 和 footer 元素。</li>
 <li>在页面滚动到上下边缘的时候，如果继续拖拽会将整个 View 一起拖拽走，导致页面的“露底”。<br>为了防止页面露底，可以在页面拖拽到边缘的时候，通过判断拖拽方向以及是否为边缘来阻止 touchmove 事件，防止页面继续拖拽。</li>
 </ol>
-<p>以上面内滚动 layout-scroll-fixed 布局为例，给出一段代码作为参考：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 防止内容区域滚到底后引起页面整体的滚动</span></div><div class="line"><span class="keyword">var</span> content = <span class="built_in">document</span>.querySelector(<span class="string">'main'</span>);</div><div class="line"><span class="keyword">var</span> startY;</div><div class="line"></div><div class="line">content.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">    startY = e.touches[<span class="number">0</span>].clientY;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">content.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="comment">// 高位表示向上滚动</span></div><div class="line">    <span class="comment">// 底位表示向下滚动</span></div><div class="line">    <span class="comment">// 1容许 0禁止</span></div><div class="line">    <span class="keyword">var</span> status = <span class="string">'11'</span>;</div><div class="line">    <span class="keyword">var</span> ele = <span class="keyword">this</span>;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> currentY = e.touches[<span class="number">0</span>].clientY;</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (ele.scrollTop === <span class="number">0</span>) &#123;</div><div class="line">        <span class="comment">// 如果内容小于容器则同时禁止上下滚动</span></div><div class="line">        status = ele.offsetHeight &gt;= ele.scrollHeight ? <span class="string">'00'</span> : <span class="string">'01'</span>;</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ele.scrollTop + ele.offsetHeight &gt;= ele.scrollHeight) &#123;</div><div class="line">        <span class="comment">// 已经滚到底部了只能向上滚动</span></div><div class="line">        status = <span class="string">'10'</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (status != <span class="string">'11'</span>) &#123;</div><div class="line">        <span class="comment">// 判断当前的滚动方向</span></div><div class="line">        <span class="keyword">var</span> direction = currentY - startY &gt; <span class="number">0</span> ? <span class="string">'10'</span> : <span class="string">'01'</span>;</div><div class="line">        <span class="comment">// 操作方向和当前允许状态求与运算，运算结果为0，就说明不允许该方向滚动，则禁止默认事件，阻止滚动</span></div><div class="line">        <span class="keyword">if</span> (!(<span class="built_in">parseInt</span>(status, <span class="number">2</span>) &amp; <span class="built_in">parseInt</span>(direction, <span class="number">2</span>))) &#123;</div><div class="line">            stopEvent(e);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-]]></content>
+<p>以上面内滚动 layout-scroll-fixed 布局为例，给出一段代码作为参考：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 防止内容区域滚到底后引起页面整体的滚动</span></div><div class="line"><span class="keyword">var</span> content = <span class="built_in">document</span>.querySelector(<span class="string">'main'</span>);</div><div class="line"><span class="keyword">var</span> startY;</div><div class="line"></div><div class="line">content.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">    startY = e.touches[<span class="number">0</span>].clientY;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">content.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="comment">// 高位表示向上滚动</span></div><div class="line">    <span class="comment">// 底位表示向下滚动</span></div><div class="line">    <span class="comment">// 1容许 0禁止</span></div><div class="line">    <span class="keyword">var</span> status = <span class="string">'11'</span>;</div><div class="line">    <span class="keyword">var</span> ele = <span class="keyword">this</span>;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> currentY = e.touches[<span class="number">0</span>].clientY;</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (ele.scrollTop === <span class="number">0</span>) &#123;</div><div class="line">        <span class="comment">// 如果内容小于容器则同时禁止上下滚动</span></div><div class="line">        status = ele.offsetHeight &gt;= ele.scrollHeight ? <span class="string">'00'</span> : <span class="string">'01'</span>;</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ele.scrollTop + ele.offsetHeight &gt;= ele.scrollHeight) &#123;</div><div class="line">        <span class="comment">// 已经滚到底部了只能向上滚动</span></div><div class="line">        status = <span class="string">'10'</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (status != <span class="string">'11'</span>) &#123;</div><div class="line">        <span class="comment">// 判断当前的滚动方向</span></div><div class="line">        <span class="keyword">var</span> direction = currentY - startY &gt; <span class="number">0</span> ? <span class="string">'10'</span> : <span class="string">'01'</span>;</div><div class="line">        <span class="comment">// 操作方向和当前允许状态求与运算，运算结果为0，就说明不允许该方向滚动，则禁止默认事件，阻止滚动</span></div><div class="line">        <span class="keyword">if</span> (!(<span class="built_in">parseInt</span>(status, <span class="number">2</span>) &amp; <span class="built_in">parseInt</span>(direction, <span class="number">2</span>))) &#123;</div><div class="line">            stopEvent(e);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
@@ -235,8 +231,7 @@
 <blockquote>
 <p><em>参考：<a href="http://www.jingyanshu.com/a/shenghuo/yanghua/2014/0625/4246.html" target="_blank" rel="external">碗莲的种植方法图解-夏夏园艺</a></em></p>
 </blockquote>
-<h2 id="种植过程记录"><a href="#种植过程记录" class="headerlink" title="种植过程记录"></a>种植过程记录</h2><h3 id="哈哈，发芽了"><a href="#哈哈，发芽了" class="headerlink" title="哈哈，发芽了"></a>哈哈，发芽了</h3><p> <img src="http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/08/147161812400.jpg" alt=""></p>
-]]></content>
+<h2 id="种植过程记录"><a href="#种植过程记录" class="headerlink" title="种植过程记录"></a>种植过程记录</h2><h3 id="哈哈，发芽了"><a href="#哈哈，发芽了" class="headerlink" title="哈哈，发芽了"></a>哈哈，发芽了</h3><p> <img src="http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/08/147161812400.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
@@ -269,8 +264,7 @@
 <p><a href="http://achun.github.io/jCT/test/test-speed.html" target="_blank" rel="external">引擎渲染速度测试</a></p>
 </blockquote>
 </li>
-</ul>
-]]></content>
+</ul>]]></content>
     
     <summary type="html">
     
@@ -302,8 +296,7 @@
 <p>来源: <a href="https://segmentfault.com/q/1010000002629233" title="blank" target="_blank" rel="external">css中如何规定某一元素高度等于其宽度</a></p>
 <ol>
 <li>iOS textarea,默认样式,字体颜色,目前未知.最好不用,用div</li>
-</ol>
-]]></content>
+</ol>]]></content>
     
     <summary type="html">
     
@@ -323,8 +316,7 @@
     <published>2016-08-17T09:07:29.000Z</published>
     <updated>2016-08-28T03:46:47.000Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="~/hexoBlog/source/_posts/mac-software.md">欧陆词典</a><br><a href="http://aria2c.com/usage.html" target="_blank" rel="external">aria</a></p>
-]]></content>
+    <content type="html"><![CDATA[<p><a href="~/hexoBlog/source/_posts/mac-software.md">欧陆词典</a><br><a href="http://aria2c.com/usage.html" target="_blank" rel="external">aria</a></p>]]></content>
     
     <summary type="html">
     
@@ -357,8 +349,7 @@
 <p>对我来说，那确实一个伟大的瞬间。</p>
 <p>Richard花了毕生去思考那些问题，对于它们，他奉献了30年，我却只给了几分钟时间而已。现在，当然他可以是错误的我可以是正确的，但最好还是先好好思考那些问题在你确信你是对的之前。<br>提问题和反驳是有区别的，反驳意味着已经认为你知道了；问问题意味着你想知道。问更多问题吧。<br>遇事先思考而不是快速反驳是值得一生追求的信条。我知道这很难。我时而还是会头脑发热，当我不再总是头脑发热时，我真的享受这种观念带来的好处。<br>如果你还不确定为什么这是重要的，考虑一下Jonathan Ive的这段向Steve Jobs致敬的话。</p>
 <p>“正如Steve热爱想法，热爱制造东西，他对创新有着罕见和崇高地尊敬。你知道我认为他比任何人都理解想法最终是强大的，想法刚开始也许很脆弱，几乎算不上想法，所以很容易被忘掉，很容易被妥协，很容易被扯碎”<br>这段话很深刻，想法最初都是脆弱的，他们一开始并没有任何能量，他们算不上是想法，因而很容易被忽略。<br>这世界上有两种事情不需要技巧:1,花别人的钱;2,摒弃想法。</p>
-<p>摒弃想法非常容易它不需要涉及任何努力。你可以嘲笑它，可以忽略它，可以朝它喷烟圈，这都容易。难的是保护它，思考它，浸淫它，探索它，重复它，实验它。正确的想法会开启我们的生活，一如错误的想法一样。<br>所以，下一次你听到某件事情的时候，或者某个人谈论某个想法，抛出或者建议一个想法的时候，给这个想法五分钟。在反驳它之前稍微思考一下，而不是说思考很难做或者很费工夫。也许真的很难，但是也可能有另外一个事实：思考是值的。</p>
-]]></content>
+<p>摒弃想法非常容易它不需要涉及任何努力。你可以嘲笑它，可以忽略它，可以朝它喷烟圈，这都容易。难的是保护它，思考它，浸淫它，探索它，重复它，实验它。正确的想法会开启我们的生活，一如错误的想法一样。<br>所以，下一次你听到某件事情的时候，或者某个人谈论某个想法，抛出或者建议一个想法的时候，给这个想法五分钟。在反驳它之前稍微思考一下，而不是说思考很难做或者很费工夫。也许真的很难，但是也可能有另外一个事实：思考是值的。</p>]]></content>
     
     <summary type="html">
     
@@ -402,8 +393,7 @@
 <p>例如上述代码中，size = “(max-width: 360px) 340px, 128px”表示当视区宽度不大于360像素时候，图片的宽度限制为340像素，其他情况下，使用128像素（对应下面demo页面第1张图）。</p>
 <p>如果sizes=”128px”, 则尺寸就一直是128像素，图片只会根据设备像素比发生变化。</p>
 <p>注意，这里所有的值都是指宽度值，且单位任意，em, px, cm, vw, …都是可以的，甚至可以CSS3的calc计算（对应下面demo页面第2张图），例如：</p>
-<p>sizes=”(max-width: 360px) calc(100vw - 20px), 128px”<br>表示当视区宽度不大于360像素时候，图片宽度为整个视区宽度减去20像素的大小。</p>
-]]></content>
+<p>sizes=”(max-width: 360px) calc(100vw - 20px), 128px”<br>表示当视区宽度不大于360像素时候，图片宽度为整个视区宽度减去20像素的大小。</p>]]></content>
     
     <summary type="html">
     
@@ -430,8 +420,7 @@
     <updated>2016-08-29T04:46:36.000Z</updated>
     
     <content type="html"><![CDATA[<p>yeoman官网提供了很多构造器,免去了自己构建的烦恼.</p>
-<p>地址:<a href="http://yeoman.io/generators/" target="_blank" rel="external">http://yeoman.io/generators/</a></p>
-]]></content>
+<p>地址:<a href="http://yeoman.io/generators/" target="_blank" rel="external">http://yeoman.io/generators/</a></p>]]></content>
     
     <summary type="html">
     
@@ -485,8 +474,7 @@
 <p>主角亮相：user-modify.</p>
 <p>支持属性值如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">user-modify: read-only;</div><div class="line">user-modify: read-write;</div><div class="line">user-modify: write-only;</div><div class="line">user-modify: read-write-plaintext-only;</div></pre></td></tr></table></figure></p>
 <p>其中，write-only不用在意，当下这个年代，基本上没有浏览器支持，以后估计也不会有。read-only表示只读，就是普通元素的默认状态啦。然后，read-write和read-write-plaintext-only会让元素表现得像个文本域一样，可以focus以及输入内容。<br>会发现，设置了read-write和read-write-plaintext-only值的两个</p><p>标签元素是可以被focus的.<br>而这两者的区别就在于，一个可以输入富文本，而下面一个只能输入纯文本.<br>然而，抱歉地跟大家讲下，目前只有webkit内核浏览器才支持<code>read-write-plaintext-only</code>这个值，因此，我们的使用其实是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-user-modify: read-write-plaintext-only</div></pre></td></tr></table></figure></p>
-<p>我们可以在移动端使用，以及，只需要兼顾webkit内容的桌面网页项目。</p>
-]]></content>
+<p>我们可以在移动端使用，以及，只需要兼顾webkit内容的桌面网页项目。</p>]]></content>
     
     <summary type="html">
     
@@ -586,8 +574,7 @@
 <p>以后，直接运行下面的命令即可。</p>
 <blockquote>
 <p>$ npm run changelog</p>
-</blockquote>
-]]></content>
+</blockquote>]]></content>
     
     <summary type="html">
     
@@ -638,9 +625,9 @@
 <hr>
 <h3 id="静态include与动态include的区别分析："><a href="#静态include与动态include的区别分析：" class="headerlink" title="静态include与动态include的区别分析："></a>静态include与动态include的区别分析：</h3><p>为了更深刻的了解这两者的区别，专门搜索了类似的资料，写出来供大家分享：</p>
 <ol>
-<li><p>静态include的结果是把其他jsp引入当前jsp,两者合为一体，用include指令, 包含的动作是在jsp被编译成java文件时执行的, 只有第一次请求时执行. <br><br>动态include的结构是两者独立,直到输出时才合并，用<code>&lt;jsp:include&gt;</code>, 包含的动作是在jsp对应的Serlet处理请求时去执行的,每次请求都会执行.</p>
+<li><p>静态include的结果是把其他jsp引入当前jsp,两者合为一体，用include指令, 包含的动作是在jsp被编译成java文件时执行的, 只有第一次请求时执行. <br>动态include的结构是两者独立,直到输出时才合并，用<code>&lt;jsp:include&gt;</code>, 包含的动作是在jsp对应的Serlet处理请求时去执行的,每次请求都会执行.</p>
 </li>
-<li><p>动态include的jsp文件独立性很强,是一个单独的jsp文件,需要使用的对象,页面设置,都必须由自己创建,当然,还好它和include它的页面的request范围是一致的. <br><br>而静态include纯粹是把代码写在外面的一种共享方法,所有的变量都是可以和include它的主文件共享,两者高度紧密结合,不能有变量同名的冲突.而页面设置也可以借用主文件的.</p>
+<li><p>动态include的jsp文件独立性很强,是一个单独的jsp文件,需要使用的对象,页面设置,都必须由自己创建,当然,还好它和include它的页面的request范围是一致的. <br>而静态include纯粹是把代码写在外面的一种共享方法,所有的变量都是可以和include它的主文件共享,两者高度紧密结合,不能有变量同名的冲突.而页面设置也可以借用主文件的.</p>
 </li>
 </ol>
 <p>静态include主要是对静态页面的引入，不会检查所包含文件的变化<br><code>&lt;% @ include file=&quot;include.html&quot; %&gt;</code><br>动态include主要是对动态页面的引入，它总是会检查所引入的页面的变化，如果所包含的资源在请求间发生变化<br>，则下一次请求包含<code>&lt;jsp:include&gt;</code>动作的jsp时，将包含资源的新内容。<br>另一方面，include指令在转换时一次性地将内容复制到jsp中，如果所包含的资源发生变化，则使用include指令的jsp将不能反应出新的内容，除非重新编译该jsp。</p>
@@ -683,9 +670,8 @@
 <li>HashMap非线程安全，高效，支持null；HashTable线程安全，低效，不支持null</li>
 <li>SortedMap有一个实现类：TreeMap</li>
 </ul>
-<p>其实最主要的是，list是用来处理序列的，而set是用来处理集的。Map是知道的，存储的是键值对 <br><br><strong>set一般无序不重复.map kv 结构 ,list 有序</strong></p>
-<hr>
-]]></content>
+<p>其实最主要的是，list是用来处理序列的，而set是用来处理集的。Map是知道的，存储的是键值对 <br><strong>set一般无序不重复.map kv 结构 ,list 有序</strong></p>
+<hr>]]></content>
     
     <summary type="html">
     
@@ -706,8 +692,7 @@
     <updated>2016-08-29T06:21:57.000Z</updated>
     
     <content type="html"><![CDATA[<p>由于hexo博客不能存储图片，需要自己将图片放到图床上，这里推荐7牛的云存储。对个人用户来说基本就是免费的。<br>具体方法，就不说了。这里留坑以后填充使用过程中遇到的坑。</p>
-<a id="more"></a>
-]]></content>
+<a id="more"></a>]]></content>
     
     <summary type="html">
     
@@ -731,8 +716,7 @@
 <p>JavaScript五种基本数据类型，Undefined,Null,Boolean,Number和string。还有一个复杂数据类型，object。<br>从逻辑角度来看，null值表示一个空指针对象 alert(typeof null); //=&gt; “object”</p>
 <a id="more"></a>
 <p>typeof是一个操作符，不是函数。<br>JavaScript是大小写敏感的，因此typeOf完全可以是一个有效的函数名。</p>
-<p>如果定义的变量准备在将来用于保存对象，那么最好将该变量初始化为null而不是其他值，这样一来，只要直接检查null值就可以知道相应的变量是否已经保存了一个对象的引用，如if (car !=null) {  /<em> 对car对象执行某些操作</em>/  }<br>实际上，undefined值是派生自null的，因此alert(null == undefined); //true</p>
-]]></content>
+<p>如果定义的变量准备在将来用于保存对象，那么最好将该变量初始化为null而不是其他值，这样一来，只要直接检查null值就可以知道相应的变量是否已经保存了一个对象的引用，如if (car !=null) {  /<em> 对car对象执行某些操作</em>/  }<br>实际上，undefined值是派生自null的，因此alert(null == undefined); //true</p>]]></content>
     
     <summary type="html">
     
@@ -829,8 +813,7 @@
 <td style="text-align:center">234</td>
 </tr>
 </tbody>
-</table>
-]]></content>
+</table>]]></content>
     
     <summary type="html">
     
@@ -1030,8 +1013,7 @@
 <td style="text-align:right">覆盖文章网址</td>
 </tr>
 </tbody>
-</table>
-]]></content>
+</table>]]></content>
     
     <summary type="html">
     

@@ -174,9 +174,9 @@
 <hr>
 <h3 id="静态include与动态include的区别分析："><a href="#静态include与动态include的区别分析：" class="headerlink" title="静态include与动态include的区别分析："></a>静态include与动态include的区别分析：</h3><p>为了更深刻的了解这两者的区别，专门搜索了类似的资料，写出来供大家分享：</p>
 <ol>
-<li><p>静态include的结果是把其他jsp引入当前jsp,两者合为一体，用include指令, 包含的动作是在jsp被编译成java文件时执行的, 只有第一次请求时执行. <br><br>动态include的结构是两者独立,直到输出时才合并，用<code>&lt;jsp:include&gt;</code>, 包含的动作是在jsp对应的Serlet处理请求时去执行的,每次请求都会执行.</p>
+<li><p>静态include的结果是把其他jsp引入当前jsp,两者合为一体，用include指令, 包含的动作是在jsp被编译成java文件时执行的, 只有第一次请求时执行. <br>动态include的结构是两者独立,直到输出时才合并，用<code>&lt;jsp:include&gt;</code>, 包含的动作是在jsp对应的Serlet处理请求时去执行的,每次请求都会执行.</p>
 </li>
-<li><p>动态include的jsp文件独立性很强,是一个单独的jsp文件,需要使用的对象,页面设置,都必须由自己创建,当然,还好它和include它的页面的request范围是一致的. <br><br>而静态include纯粹是把代码写在外面的一种共享方法,所有的变量都是可以和include它的主文件共享,两者高度紧密结合,不能有变量同名的冲突.而页面设置也可以借用主文件的.</p>
+<li><p>动态include的jsp文件独立性很强,是一个单独的jsp文件,需要使用的对象,页面设置,都必须由自己创建,当然,还好它和include它的页面的request范围是一致的. <br>而静态include纯粹是把代码写在外面的一种共享方法,所有的变量都是可以和include它的主文件共享,两者高度紧密结合,不能有变量同名的冲突.而页面设置也可以借用主文件的.</p>
 </li>
 </ol>
 <p>静态include主要是对静态页面的引入，不会检查所包含文件的变化<br><code>&lt;% @ include file=&quot;include.html&quot; %&gt;</code><br>动态include主要是对动态页面的引入，它总是会检查所引入的页面的变化，如果所包含的资源在请求间发生变化<br>，则下一次请求包含<code>&lt;jsp:include&gt;</code>动作的jsp时，将包含资源的新内容。<br>另一方面，include指令在转换时一次性地将内容复制到jsp中，如果所包含的资源发生变化，则使用include指令的jsp将不能反应出新的内容，除非重新编译该jsp。</p>
@@ -219,9 +219,8 @@
 <li>HashMap非线程安全，高效，支持null；HashTable线程安全，低效，不支持null</li>
 <li>SortedMap有一个实现类：TreeMap</li>
 </ul>
-<p>其实最主要的是，list是用来处理序列的，而set是用来处理集的。Map是知道的，存储的是键值对 <br><br><strong>set一般无序不重复.map kv 结构 ,list 有序</strong></p>
+<p>其实最主要的是，list是用来处理序列的，而set是用来处理集的。Map是知道的，存储的是键值对 <br><strong>set一般无序不重复.map kv 结构 ,list 有序</strong></p>
 <hr>
-
             <blockquote>
                 <p>
                 本文地址：
