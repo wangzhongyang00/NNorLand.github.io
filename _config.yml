@@ -99,7 +99,8 @@ jsonContent:
     tags: true
 #压缩
 html_minifier:
-  exclude:
+  minifyCSS: true
+  minifyJS: true
 
 clean_css:
   exclude:

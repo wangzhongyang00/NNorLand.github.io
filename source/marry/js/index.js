@@ -11,7 +11,7 @@ $(document).ready(function () {
             return;
         }
 
-        if (volume >= 0.95) {
+        if (volume >= 0.5) {
             return;
         }
 
