@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>我们结婚吧!</title>
+    <title>画廊</title>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slicebox.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/slicebox.css"/>
     <link rel="stylesheet" type="text/css" href="css/custom.css"/>
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/normalize.css"/>
+    <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
+
+    <!--css placefolder-->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
 </head>
 <body>
 <div class="container">
 
-    <audio src="http://o9yayw1x8.bkt.clouddn.com/audio/hexo/2016/marry-you.mp3" autoplay loop controls>
-
+    <audio id="bg-player" src="http://o9yayw1x8.bkt.clouddn.com/audio/hexo/2016/marry-you.mp3" autoplay loop controls>
+        您的浏览器不支持audio标签
     </audio>
 
-    <h1>这是 标题</h1>
+    <h1>这是标题</h1>
 
     <div class="wrapper">
 
@@ -82,14 +85,12 @@
 
     </div><!-- /wrapper -->
 
-
 </div>
-<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+<script type="text/javascript" src="lib/modernizr.custom.46884.js"></script>
+<script type="text/javascript" src="lib/jquery.slicebox.js"></script>
 <script type="text/javascript">
     $(function () {
-
         var Page = (function () {
-
             var $navArrows = $('#nav-arrows').hide(),
                     $navOptions = $('#nav-options').hide(),
                     $shadow = $('#shadow').hide(),
@@ -149,8 +150,10 @@
         })();
 
         Page.init();
-
     });
 </script>
+
+<!--javascript placefolder-->
+<script src="js/index.js"></script>
 </body>
 </html>	

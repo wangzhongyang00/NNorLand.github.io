@@ -17,13 +17,13 @@ menu:
   tags:
     text: 标签
     url: /tags
-  github:
-    text: github
-    url: https://github.com/NNorland
-    target: _blank
   weibo:
     text: 微博
     url: http://www.weibo.com/vergilhk
+    target: _blank
+  github:
+    text: github
+    url: https://github.com/NNorland
     target: _blank
   link:
     text: 关于

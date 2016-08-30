@@ -78,6 +78,7 @@ search:
   path: search.json
   field: post
 
+#优化
 jsonContent:
   meta: false
   pages: false
@@ -96,7 +97,23 @@ jsonContent:
     excerpt: false
     categories: false
     tags: true
+#压缩
+html_minifier:
+  exclude:
 
+clean_css:
+  exclude:
+
+uglify:
+  mangle: true
+  output:
+  compress:
+  exclude:
+
+#站点地图
+sitemap:
+    path: sitemap.xml
+#发布
 deploy:
   type: git
   repo: git@github.com:NNorLand/NNorLand.github.io.git

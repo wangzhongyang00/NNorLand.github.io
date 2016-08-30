@@ -9,21 +9,12 @@
 }
 audio {
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    right: 10px;
 }
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* General Demo Style */
 body {
     background: #e4ebe9 repeat top left;
     color: #444;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -40,7 +31,6 @@ h1, h2, h5 {
     margin: 20px 20px 30px 20px;
     font-size: 56px;
     color: #fff;
-    font-family: "Volkhov", serif;
     text-align: center;
     font-weight: 700;
     text-shadow: 1px 1px 3px #e0d1bc;
