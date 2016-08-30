@@ -13,9 +13,7 @@
 	font-size: 20px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
-.top-banner clearfix{
-	display:none;
-}
+
 .sb-description h3 a {
 	color: #4a3c27;
 	text-shadow: 0 1px 1px rgba(255,255,255,0.5);
