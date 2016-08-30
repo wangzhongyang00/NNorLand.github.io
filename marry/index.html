@@ -8,16 +8,18 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="lib/slicebox.css"/>
     <link rel="stylesheet" type="text/css" href="css/custom.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
 
     <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="lib/modernizr.custom.46884.js"></script>
+
+    <!--css placefolder-->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
 </head>
 <body>
 <div class="container">
 
     <audio id="bg-player" src="http://o9yayw1x8.bkt.clouddn.com/audio/hexo/2016/marry-you.mp3" autoplay loop controls>
-        您的浏览器不知道audio标签
+        您的浏览器不支持audio标签
     </audio>
 
     <h1>这是标题</h1>
@@ -83,13 +85,12 @@
 
     </div><!-- /wrapper -->
 
-
 </div>
+<script type="text/javascript" src="lib/modernizr.custom.46884.js"></script>
 <script type="text/javascript" src="lib/jquery.slicebox.js"></script>
 <script type="text/javascript">
     $(function () {
         var Page = (function () {
-
             var $navArrows = $('#nav-arrows').hide(),
                     $navOptions = $('#nav-options').hide(),
                     $shadow = $('#shadow').hide(),
@@ -149,10 +150,10 @@
         })();
 
         Page.init();
-
     });
 </script>
 
+<!--javascript placefolder-->
 <script src="js/index.js"></script>
 </body>
 </html>	

@@ -5,15 +5,16 @@ $(document).ready(function () {
     audio.addEventListener('canplaythrough', function () {
         this.volume = 0.05;
     }, false);
-    var audioInterval = (function () {
+    var audioInterval = setInterval(function () {
         var volume = audio.volume;
         if (!volume) {
             return;
         }
 
-        if (volume >= 0.5) {
+        if (volume >= 0.95) {
             return;
         }
+
         if (volume) {
             audio.volume += 0.05;
         }
