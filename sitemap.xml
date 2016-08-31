@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://liujiaan.ren/photos/index.html</loc>
-    
-    <lastmod>2016-08-30T10:35:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liujiaan.ren/2016/08/18/FrontEnd/css-skill/</loc>
     
     <lastmod>2016-08-29T10:31:53.000Z</lastmod>
@@ -65,14 +58,14 @@
   </url>
   
   <url>
-    <loc>http://liujiaan.ren/2016/08/01/JavaScript/yoeman-generator/</loc>
+    <loc>http://liujiaan.ren/2016/08/19/JavaScript/node-js-swig-engine/</loc>
     
     <lastmod>2016-08-29T04:46:36.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://liujiaan.ren/2016/08/19/JavaScript/node-js-swig-engine/</loc>
+    <loc>http://liujiaan.ren/2016/08/01/JavaScript/yoeman-generator/</loc>
     
     <lastmod>2016-08-29T04:46:36.000Z</lastmod>
     
@@ -121,13 +114,6 @@
   </url>
   
   <url>
-    <loc>http://liujiaan.ren/2016/07/26/git-commit-message-change-log/</loc>
-    
-    <lastmod>2016-08-25T06:36:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liujiaan.ren/2016/07/02/markdown-guide/</loc>
     
     <lastmod>2016-08-25T06:36:18.000Z</lastmod>
@@ -135,7 +121,7 @@
   </url>
   
   <url>
-    <loc>http://liujiaan.ren/404.html</loc>
+    <loc>http://liujiaan.ren/2016/07/26/git-commit-message-change-log/</loc>
     
     <lastmod>2016-08-25T06:36:18.000Z</lastmod>
     
@@ -143,6 +129,13 @@
   
   <url>
     <loc>http://liujiaan.ren/2016/07/12/icstest-java/</loc>
+    
+    <lastmod>2016-08-25T06:36:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liujiaan.ren/404.html</loc>
     
     <lastmod>2016-08-25T06:36:18.000Z</lastmod>
     
